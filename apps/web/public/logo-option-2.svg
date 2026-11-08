@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#12151D"/>
+  <rect x="0.5" y="0.5" width="63" height="63" rx="15.5" stroke="rgba(255, 255, 255, 0.08)"/>
+  
+  <!-- Outer Interlocking Aperture Blades (Letter C + L) -->
+  <path d="M47 23C43.5 16.5 36.5 12 28.5 12C17.7 12 9 20.7 9 31.5C9 42.3 17.7 51 28.5 51C37 51 44.3 46 47.5 39" 
+        stroke="#94A3F8" 
+        stroke-width="5" 
+        stroke-linecap="round"/>
+        
+  <path d="M22 41C25 44.5 29.5 46.5 34.5 46.5C42.5 46.5 49 40 49 32C49 26.5 46 22 41.5 19.5" 
+        stroke="#6E7DCF" 
+        stroke-width="3.5" 
+        stroke-linecap="round" 
+        stroke-dasharray="2 0"/>
+        
+  <!-- Prism Focal Triangle Core (Apricot) -->
+  <polygon points="32,24 39,36 25,36" fill="#F5A666"/>
+  <circle cx="32" cy="32" r="2.5" fill="#FFF2E8"/>
+</svg>

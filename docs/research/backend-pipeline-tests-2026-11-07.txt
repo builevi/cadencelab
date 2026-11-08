@@ -1,0 +1,62 @@
+/Users/apple/.gemini/antigravity/scratch/sociallens-pro/.venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+test_data_driven_trend_api (test_algorithms.APITests.test_data_driven_trend_api) ... ok
+test_gap_evidence_passes_through (test_algorithms.APITests.test_gap_evidence_passes_through) ... ok
+test_gap_missing_demand_is_explicit (test_algorithms.APITests.test_gap_missing_demand_is_explicit) ... ok
+test_import_from_documented_working_directory (test_algorithms.APITests.test_import_from_documented_working_directory) ... ok
+test_invalid_requests_return_422 (test_algorithms.APITests.test_invalid_requests_return_422) ... ok
+test_live_feature_analysis (test_algorithms.APITests.test_live_feature_analysis) ... ok
+test_synthetic_demo_labeled_and_rng_isolated (test_algorithms.APITests.test_synthetic_demo_labeled_and_rng_isolated) ... ok
+test_derivative_uses_seconds (test_algorithms.CFITests.test_derivative_uses_seconds) ... ok
+test_hook_does_not_hide_high_load (test_algorithms.CFITests.test_hook_does_not_hide_high_load) ... ok
+test_invalid_inputs_rejected (test_algorithms.CFITests.test_invalid_inputs_rejected) ... ok
+test_repeated_analysis_is_deterministic_and_bounded (test_algorithms.CFITests.test_repeated_analysis_is_deterministic_and_bounded) ... ok
+test_single_slice_supported (test_algorithms.CFITests.test_single_slice_supported) ... ok
+test_static_but_semantic_content_is_not_automatic_boredom (test_algorithms.CFITests.test_static_but_semantic_content_is_not_automatic_boredom) ... ok
+test_zero_signals_are_flagged_even_during_hook (test_algorithms.CFITests.test_zero_signals_are_flagged_even_during_hook) ... ok
+test_covered_question_is_not_reported_as_gap (test_algorithms.GapTests.test_covered_question_is_not_reported_as_gap) ... ok
+test_demand_increases_score_not_probability (test_algorithms.GapTests.test_demand_increases_score_not_probability) ... ok
+test_duplicate_query_does_not_inflate_demand (test_algorithms.GapTests.test_duplicate_query_does_not_inflate_demand) ... ok
+test_invalid_embeddings_and_counts (test_algorithms.GapTests.test_invalid_embeddings_and_counts) ... ok
+test_no_evidence_means_no_opportunities (test_algorithms.GapTests.test_no_evidence_means_no_opportunities) ... ok
+test_scale_and_row_order_invariance (test_algorithms.GapTests.test_scale_and_row_order_invariance) ... ok
+test_different_observations_change_forecast (test_algorithms.SEIRTests.test_different_observations_change_forecast) ... ok
+test_fit_and_synthetic_holdout (test_algorithms.SEIRTests.test_fit_and_synthetic_holdout) ... ok
+test_future_days_and_horizon_invariance (test_algorithms.SEIRTests.test_future_days_and_horizon_invariance) ... ok
+test_inactive_scenario_is_finite (test_algorithms.SEIRTests.test_inactive_scenario_is_finite) ... ok
+test_invalid_history_and_population (test_algorithms.SEIRTests.test_invalid_history_and_population) ... ok
+test_mass_and_nonnegativity (test_algorithms.SEIRTests.test_mass_and_nonnegativity) ... ok
+test_import_handles_unicode_quotes_and_unknown_metrics (test_csv_imports.CSVTests.test_import_handles_unicode_quotes_and_unknown_metrics) ... ok
+test_reject_bad_headers_and_row_width (test_csv_imports.CSVTests.test_reject_bad_headers_and_row_width) ... ok
+test_reject_naive_dates_and_duplicate_posts (test_csv_imports.CSVTests.test_reject_naive_dates_and_duplicate_posts) ... ok
+test_reject_negative_fractional_or_unknown_text_metric (test_csv_imports.CSVTests.test_reject_negative_fractional_or_unknown_text_metric) ... ok
+test_concurrent_idempotency (test_reports.JobsTests.test_concurrent_idempotency) ... ok
+test_csv_job_list_and_cancel_routes (test_reports.JobsTests.test_csv_job_list_and_cancel_routes) ... ok
+test_failed_job_is_visible (test_reports.JobsTests.test_failed_job_is_visible) ... ERROR:root:Report computation failed for job 1eeb4589-b188-4bc2-818b-a9d28cebca48 (details suppressed)
+ok
+test_job_result_sse_and_persistence (test_reports.JobsTests.test_job_result_sse_and_persistence) ... ok
+test_missing_job_and_invalid_inputs (test_reports.JobsTests.test_missing_job_and_invalid_inputs) ... ok
+test_restart_recovers_expired_running_job (test_reports.JobsTests.test_restart_recovers_expired_running_job) ... ok
+test_semantic_job_preserves_statistics_on_provider_failure (test_reports.JobsTests.test_semantic_job_preserves_statistics_on_provider_failure) ... ok
+test_age_and_duration_and_capture_mismatch_excluded (test_reports.ReportTests.test_age_and_duration_and_capture_mismatch_excluded) ... ok
+test_comparison_and_merge_keep_channels_separate (test_reports.ReportTests.test_comparison_and_merge_keep_channels_separate) ... ok
+test_invalid_scope_dates_and_duplicate_rejected (test_reports.ReportTests.test_invalid_scope_dates_and_duplicate_rejected) ... ok
+test_missing_metrics_are_not_zero (test_reports.ReportTests.test_missing_metrics_are_not_zero) ... ok
+test_relative_performance_and_evidence (test_reports.ReportTests.test_relative_performance_and_evidence) ... ok
+test_single_video_uses_context (test_reports.ReportTests.test_single_video_uses_context) ... ok
+test_bounded_rate_limit_retry_and_timeout (test_semantic_pipeline.SemanticTests.test_bounded_rate_limit_retry_and_timeout) ... ok
+test_cancel_fences_running_worker_and_pagination (test_semantic_pipeline.SemanticTests.test_cancel_fences_running_worker_and_pagination) ... ok
+test_duplicate_module_and_wrong_evidence_type_rejected (test_semantic_pipeline.SemanticTests.test_duplicate_module_and_wrong_evidence_type_rejected) ... ok
+test_exact_evidence_is_checked_and_schema_forbids_invented_fields (test_semantic_pipeline.SemanticTests.test_exact_evidence_is_checked_and_schema_forbids_invented_fields) ... ok
+test_invalid_response_and_auth_errors_are_sanitized (test_semantic_pipeline.SemanticTests.test_invalid_response_and_auth_errors_are_sanitized) ... ok
+test_no_text_does_not_spend_provider_request (test_semantic_pipeline.SemanticTests.test_no_text_does_not_spend_provider_request) ... ok
+test_partial_failure_preserves_other_modules (test_semantic_pipeline.SemanticTests.test_partial_failure_preserves_other_modules) ... ok
+test_payload_is_bounded_and_order_is_deterministic (test_semantic_pipeline.SemanticTests.test_payload_is_bounded_and_order_is_deterministic) ... ok
+test_provider_success_and_no_token_leaked_to_body (test_semantic_pipeline.SemanticTests.test_provider_success_and_no_token_leaked_to_body) ... ok
+test_statistics_mode_never_calls_provider (test_semantic_pipeline.SemanticTests.test_statistics_mode_never_calls_provider) ... ok
+test_successful_three_part_pipeline_and_progress (test_semantic_pipeline.SemanticTests.test_successful_three_part_pipeline_and_progress) ... ok
+
+----------------------------------------------------------------------
+Ran 54 tests in 1.194s
+
+OK

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#12151D"/>
+  <rect x="0.5" y="0.5" width="63" height="63" rx="15.5" stroke="rgba(255, 255, 255, 0.08)"/>
+  
+  <!-- Outer Trajectory Track (Periwinkle Bold Arc) -->
+  <path d="M43 19C39.5 15.2 34.5 13 29 13C18 13 9 22 9 33C9 44 18 53 29 53C35 53 40.2 50.4 43.8 46.2" 
+        stroke="#94A3F8" 
+        stroke-width="5.5" 
+        stroke-linecap="round"/>
+        
+  <!-- Inner Concentric Cadence Track -->
+  <path d="M36 26C34 24.2 31.2 23 28 23C22 23 17 28 17 34C17 40 22 45 28 45C31.5 45 34.5 43.5 36.5 41" 
+        stroke="#7B8CD9" 
+        stroke-width="3.5" 
+        stroke-linecap="round"/>
+        
+  <!-- Signal Accent Point (Precision Apricot Pulse at 3 o'clock) -->
+  <circle cx="45" cy="33" r="5" fill="#F5A666"/>
+  <circle cx="45" cy="33" r="2" fill="#FFF"/>
+</svg>

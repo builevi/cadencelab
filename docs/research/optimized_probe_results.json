@@ -1,0 +1,79 @@
+{
+  "scope": "regression_and_synthetic_holdout_not_real_user_validation",
+  "cfi_zero_signal": {
+    "overall_grade": "F",
+    "grade_basis": "heuristic_pacing_only",
+    "predicted_completion_rate": null,
+    "prediction_status": "not_calibrated",
+    "pacing_score": 0.0,
+    "hook_strength_3s": 0.0,
+    "boredom_valleys_count": 1,
+    "low_stimulus_fraction": 1.0,
+    "critical_drop_points": [],
+    "review_points": [
+      0.0
+    ],
+    "overload_fraction": 0.0,
+    "limitations": "Chỉ số nhịp dựng heuristic; chưa dự báo retention hoặc chứng minh quan hệ nhân quả."
+  },
+  "seir_initial_population": 1000000.0,
+  "seir_configured_population": 1000000.0,
+  "seir_day_one_horizon_comparison": {
+    "7_days": {
+      "day": 1,
+      "active_virality": 0.0001808285409454437,
+      "audience_fatigue": 0.00013753180676052295,
+      "trend_phase": "SURGING",
+      "actionable_advice": "Kịch bản có điều kiện; đối chiếu dữ liệu thực trước khi quyết định sản xuất hoặc ngân sách.",
+      "active_spreaders": 180.8285409454437,
+      "growth_rate": 0.4515988222073962
+    },
+    "60_days": {
+      "day": 1,
+      "active_virality": 0.0001808285409454437,
+      "audience_fatigue": 0.00013753180676052295,
+      "trend_phase": "SURGING",
+      "actionable_advice": "Kịch bản có điều kiện; đối chiếu dữ liệu thực trước khi quyết định sản xuất hoặc ngân sách.",
+      "active_spreaders": 180.8285409454437,
+      "growth_rate": 0.4515988222073962
+    }
+  },
+  "synthetic_holdout": {
+    "training_days": 28,
+    "holdout_days": 8,
+    "fitted_beta": 0.6499999998135796,
+    "true_beta": 0.65,
+    "seir_mae": 0.0023008832104096655,
+    "last_value_baseline_mae": 25288.413611236712,
+    "relative_mae": 2.7086905441378813e-08,
+    "limitation": "Synthetic data generated from the same model family; not evidence of real-world accuracy."
+  },
+  "gap_without_demand": [],
+  "gap_with_demand": [
+    {
+      "whitespace_id": "gap_5126adf4dfb2581c",
+      "bounding_clusters": [
+        "A",
+        "B"
+      ],
+      "void_center_coordinates": [],
+      "market_opportunity_score": 0.5,
+      "audience_demand_signal": "Dữ liệu đầu vào ghi nhận 20 tín hiệu cho câu hỏi này; cần kiểm tra nguồn và khử trùng lặp người dùng.",
+      "suggested_content_angle": "Kiểm tra các nội dung gần nhất trong mẫu trước khi viết bài trả lời: Synthetic test question",
+      "query": "Synthetic test question",
+      "demand_count": 20,
+      "nearest_content_similarity": 0.0,
+      "supporting_sources": [
+        "https://example.com/synthetic-fixture"
+      ],
+      "evidence_status": "caller_supplied_not_independently_verified",
+      "score_basis": "demand_weighted_semantic_gap_not_probability"
+    }
+  ],
+  "gap_scale_invariant": true,
+  "gap_duplicate_invariant": true,
+  "api_import": {
+    "status": "ok",
+    "version": "0.2.0"
+  }
+}

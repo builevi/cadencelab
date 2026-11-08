@@ -1,0 +1,25 @@
+CadenceLab Desktop 0.3.0 — local development build
+
+Bundled UI and Python backend include third-party open source components:
+Electron / Chromium (MIT and Chromium third-party licenses, included with Electron),
+Next.js / React (MIT), CPython (PSF), NumPy (BSD), SciPy (BSD), FastAPI (MIT),
+Pydantic (MIT), Uvicorn (BSD), HTTPX (BSD), yt-dlp (Unlicense),
+PyInstaller bootloader (GPL with packaging exception), imageio-ffmpeg (BSD),
+faster-whisper (MIT), CTranslate2 (MIT), ONNX Runtime (MIT),
+and the multilingual faster-whisper tiny model (model weights from Whisper).
+
+FFmpeg executable is the unmodified imageio-ffmpeg packaged build. Its exact
+version/build flags and licensing are available by running the bundled binary
+with -version / -L. Upstream source and build material:
+https://github.com/imageio/imageio-ffmpeg
+https://github.com/ffmpeg/ffmpeg
+https://ffmpeg.org/download.html
+https://github.com/SYSTRAN/faster-whisper
+https://huggingface.co/Systran/faster-whisper-tiny
+
+This is an internal macOS testing build, ad-hoc signed, not notarized by Apple.
+Public commercial distribution requires a release-signing/notarization process
+and a complete third-party license / corresponding-source distribution review.
+No project .env file, account token, private reports or Codex credentials are
+included in the installer. Cloud providers need the user's own API key/account;
+Ollama and Codex are external optional runtimes, not bundled subscriptions.

@@ -1,0 +1,256 @@
+{
+  "schema_version": "1.0",
+  "kind": "channel",
+  "data_source": "caller_supplied_snapshot",
+  "channels": [
+    {
+      "channel_id": "test",
+      "platform": "tiktok",
+      "name": "Fixture Channel",
+      "corpus_size": 7,
+      "totals": {
+        "views": {
+          "known_total": 6100,
+          "observed_posts": 7,
+          "missing_posts": 0
+        },
+        "likes": {
+          "known_total": 70,
+          "observed_posts": 7,
+          "missing_posts": 0
+        },
+        "comments": {
+          "known_total": 14,
+          "observed_posts": 7,
+          "missing_posts": 0
+        },
+        "shares": {
+          "known_total": 7,
+          "observed_posts": 7,
+          "missing_posts": 0
+        }
+      },
+      "performance": [
+        {
+          "post_id": "0",
+          "url": "https://example.com/post/0",
+          "views": 100,
+          "cohort": [
+            "short_video",
+            "30d_plus",
+            "30_60s"
+          ],
+          "peer_count": 6,
+          "peer_median_views": 1000.0,
+          "relative_views": 0.1,
+          "status": "below_peer_baseline",
+          "engagement_per_view": 0.13
+        },
+        {
+          "post_id": "1",
+          "url": "https://example.com/post/1",
+          "views": 1000,
+          "cohort": [
+            "short_video",
+            "30d_plus",
+            "30_60s"
+          ],
+          "peer_count": 6,
+          "peer_median_views": 1000.0,
+          "relative_views": 1.0,
+          "status": "within_peer_range",
+          "engagement_per_view": 0.013
+        },
+        {
+          "post_id": "2",
+          "url": "https://example.com/post/2",
+          "views": 1000,
+          "cohort": [
+            "short_video",
+            "30d_plus",
+            "30_60s"
+          ],
+          "peer_count": 6,
+          "peer_median_views": 1000.0,
+          "relative_views": 1.0,
+          "status": "within_peer_range",
+          "engagement_per_view": 0.013
+        },
+        {
+          "post_id": "3",
+          "url": "https://example.com/post/3",
+          "views": 1000,
+          "cohort": [
+            "short_video",
+            "30d_plus",
+            "30_60s"
+          ],
+          "peer_count": 6,
+          "peer_median_views": 1000.0,
+          "relative_views": 1.0,
+          "status": "within_peer_range",
+          "engagement_per_view": 0.013
+        },
+        {
+          "post_id": "4",
+          "url": "https://example.com/post/4",
+          "views": 1000,
+          "cohort": [
+            "short_video",
+            "30d_plus",
+            "30_60s"
+          ],
+          "peer_count": 6,
+          "peer_median_views": 1000.0,
+          "relative_views": 1.0,
+          "status": "within_peer_range",
+          "engagement_per_view": 0.013
+        },
+        {
+          "post_id": "5",
+          "url": "https://example.com/post/5",
+          "views": 1000,
+          "cohort": [
+            "short_video",
+            "30d_plus",
+            "30_60s"
+          ],
+          "peer_count": 6,
+          "peer_median_views": 1000.0,
+          "relative_views": 1.0,
+          "status": "within_peer_range",
+          "engagement_per_view": 0.013
+        },
+        {
+          "post_id": "6",
+          "url": "https://example.com/post/6",
+          "views": 1000,
+          "cohort": [
+            "short_video",
+            "30d_plus",
+            "30_60s"
+          ],
+          "peer_count": 6,
+          "peer_median_views": 1000.0,
+          "relative_views": 1.0,
+          "status": "within_peer_range",
+          "engagement_per_view": 0.013
+        }
+      ],
+      "qualitative_modules": [
+        {
+          "id": "brand_positioning",
+          "status": "requires_semantic_analysis",
+          "findings": [],
+          "missing": [
+            "validated structured semantic analysis and supporting evidence"
+          ]
+        },
+        {
+          "id": "tone_of_voice",
+          "status": "requires_semantic_analysis",
+          "findings": [],
+          "missing": [
+            "validated structured semantic analysis and supporting evidence"
+          ]
+        },
+        {
+          "id": "target_audience_clues",
+          "status": "requires_semantic_analysis",
+          "findings": [],
+          "missing": [
+            "validated structured semantic analysis and supporting evidence"
+          ]
+        },
+        {
+          "id": "posting_and_trends",
+          "status": "descriptive_only",
+          "findings": {
+            "posts_by_weekday_utc": {
+              "3": 1,
+              "4": 1,
+              "5": 1,
+              "6": 1,
+              "0": 1,
+              "1": 1,
+              "2": 1
+            },
+            "format_mix": {
+              "short_video": 7
+            }
+          },
+          "missing": [
+            "Repeated snapshots required to measure growth; no best-time causal inference."
+          ]
+        },
+        {
+          "id": "content_pillars",
+          "status": "requires_semantic_analysis",
+          "findings": [],
+          "missing": [
+            "validated structured semantic analysis and supporting evidence"
+          ]
+        },
+        {
+          "id": "content_structure_analysis",
+          "status": "requires_semantic_analysis",
+          "findings": [],
+          "missing": [
+            "validated structured semantic analysis and supporting evidence"
+          ]
+        },
+        {
+          "id": "transcript_analysis",
+          "status": "requires_semantic_analysis",
+          "findings": [],
+          "missing": [
+            "validated structured semantic analysis and supporting evidence"
+          ]
+        },
+        {
+          "id": "ad_strategy",
+          "status": "requires_semantic_analysis",
+          "findings": [],
+          "missing": [
+            "validated structured semantic analysis and supporting evidence"
+          ]
+        }
+      ],
+      "source_urls": [
+        "https://example.com/post/0",
+        "https://example.com/post/1",
+        "https://example.com/post/2",
+        "https://example.com/post/3",
+        "https://example.com/post/4",
+        "https://example.com/post/5",
+        "https://example.com/post/6"
+      ],
+      "snapshot_range": {
+        "from": "2026-03-01T00:00:00+00:00",
+        "to": "2026-03-01T00:00:00+00:00"
+      },
+      "publication_range": {
+        "from": "2026-01-01T00:00:00+00:00",
+        "to": "2026-01-07T00:00:00+00:00"
+      }
+    }
+  ],
+  "target_post_id": null,
+  "methodology": {
+    "low_performance_rule": "views < 0.5 × leave-one-out cohort median",
+    "minimum_peers": 5,
+    "cohorts": [
+      "same channel",
+      "same format",
+      "same duration bucket",
+      "same post-age bucket",
+      "snapshots within 24 hours"
+    ],
+    "engagement_definition": "(likes + comments + shares) / views; only when all inputs are known"
+  },
+  "limitations": [
+    "Relative views flag is descriptive, not proof of a weak hook or distribution restriction.",
+    "Views are platform-specific counters; cross-platform totals are not unique people.",
+    "No automatic URL collection, retention prediction or semantic model invocation in this report."
+  ]
+}

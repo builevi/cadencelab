@@ -1,0 +1,12 @@
+{
+  "web_http": 200,
+  "web_api_proxy": 200,
+  "desktop_native_settings_test": "Codex returned valid JSON",
+  "desktop_native_settings_save": "success, isolated test profile",
+  "desktop_workspace_without_google": "CFI opened successfully",
+  "python_tests": 89,
+  "node_settings_tests": 5,
+  "cloud_provider_live_keys_tested": false,
+  "mac_signing": "ad-hoc, not notarized",
+  "windows_installer_built": false
+}

@@ -1,0 +1,67 @@
+{
+  "cfi_zero_signal": {
+    "overall_grade": "B",
+    "predicted_completion_rate": "18.9%",
+    "hook_strength_3s": 0.23,
+    "sawtooth_rhythm_score": 0.0,
+    "boredom_valleys_count": 0,
+    "critical_drop_points": []
+  },
+  "cfi_normalized_minimum": 0.23147521650098238,
+  "cfi_timestep_changes_scores": false,
+  "cfi_length_0": "ValueError",
+  "cfi_length_1": "ValueError",
+  "seir_initial_population": 1000200.0,
+  "seir_configured_population": 1000000.0,
+  "seir_first_day_horizon_dependency": {
+    "7_days": {
+      "day": 1,
+      "active_virality": 0.063,
+      "audience_fatigue": 0.0,
+      "trend_phase": "INCUBATION",
+      "actionable_advice": "Đại dương xanh: Format mới nhú, khán giả chưa có đề kháng. Sản xuất và đăng ngay để chiếm lĩnh lượt share!"
+    },
+    "60_days": {
+      "day": 1,
+      "active_virality": 0.001,
+      "audience_fatigue": 0.0,
+      "trend_phase": "INCUBATION",
+      "actionable_advice": "Đại dương xanh: Format mới nhú, khán giả chưa có đề kháng. Sản xuất và đăng ngay để chiếm lĩnh lượt share!"
+    }
+  },
+  "seir_time_grid_21": {
+    "start": 0,
+    "end": 21,
+    "step": 1.05,
+    "returned_labels": [
+      1,
+      21
+    ]
+  },
+  "tda_ignores_demand_input": true,
+  "tda_output_without_demand": [
+    {
+      "whitespace_id": "void_b_a",
+      "bounding_clusters": [
+        "B",
+        "A"
+      ],
+      "void_center_coordinates": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "market_opportunity_score": 0.98,
+      "audience_demand_signal": "Khán giả thường xuyên tìm kiếm giao điểm giữa [B] và [A], nhưng cả 2 nhóm đối thủ đều chưa từng khai thác.",
+      "suggested_content_angle": "Kết hợp phong cách giải trí của [B] với giải pháp thực tế của [A]."
+    }
+  ],
+  "tda_scale_changes_count": {
+    "original": 1,
+    "scaled_0_1": 0
+  },
+  "api_import": {
+    "exception": "ModuleNotFoundError",
+    "message": "No module named 'packages.algo_core'"
+  }
+}

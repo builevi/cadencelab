@@ -1,0 +1,50 @@
+{
+  "fixture": "synthetic captions, not TikTok collection",
+  "elapsed_seconds": 26.4,
+  "job_state": "completed",
+  "semantic_status": "completed",
+  "provider": "codex_local",
+  "model": "gpt-6.1-sol",
+  "modules": [
+    {
+      "id": "brand_positioning",
+      "status": "analyzed",
+      "error": null
+    },
+    {
+      "id": "tone_of_voice",
+      "status": "analyzed",
+      "error": null
+    },
+    {
+      "id": "target_audience_clues",
+      "status": "analyzed",
+      "error": null
+    },
+    {
+      "id": "posting_and_trends",
+      "status": "analyzed",
+      "error": null
+    },
+    {
+      "id": "content_pillars",
+      "status": "analyzed",
+      "error": null
+    },
+    {
+      "id": "content_structure_analysis",
+      "status": "analyzed",
+      "error": null
+    },
+    {
+      "id": "transcript_analysis",
+      "status": "insufficient_evidence",
+      "error": null
+    },
+    {
+      "id": "ad_strategy",
+      "status": "insufficient_evidence",
+      "error": null
+    }
+  ]
+}

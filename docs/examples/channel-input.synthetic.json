@@ -1,0 +1,97 @@
+{
+  "kind": "channel",
+  "channels": [
+    {
+      "id": "test",
+      "name": "Fixture Channel",
+      "platform": "tiktok",
+      "url": "https://example.com/channel",
+      "posts": [
+        {
+          "id": "0",
+          "url": "https://example.com/post/0",
+          "published_at": "2026-01-01T00:00:00Z",
+          "observed_at": "2026-03-01T00:00:00Z",
+          "format": "short_video",
+          "duration_seconds": 40,
+          "views": 100,
+          "likes": 10,
+          "comments": 2,
+          "shares": 1
+        },
+        {
+          "id": "1",
+          "url": "https://example.com/post/1",
+          "published_at": "2026-01-02T00:00:00Z",
+          "observed_at": "2026-03-01T00:00:00Z",
+          "format": "short_video",
+          "duration_seconds": 40,
+          "views": 1000,
+          "likes": 10,
+          "comments": 2,
+          "shares": 1
+        },
+        {
+          "id": "2",
+          "url": "https://example.com/post/2",
+          "published_at": "2026-01-03T00:00:00Z",
+          "observed_at": "2026-03-01T00:00:00Z",
+          "format": "short_video",
+          "duration_seconds": 40,
+          "views": 1000,
+          "likes": 10,
+          "comments": 2,
+          "shares": 1
+        },
+        {
+          "id": "3",
+          "url": "https://example.com/post/3",
+          "published_at": "2026-01-04T00:00:00Z",
+          "observed_at": "2026-03-01T00:00:00Z",
+          "format": "short_video",
+          "duration_seconds": 40,
+          "views": 1000,
+          "likes": 10,
+          "comments": 2,
+          "shares": 1
+        },
+        {
+          "id": "4",
+          "url": "https://example.com/post/4",
+          "published_at": "2026-01-05T00:00:00Z",
+          "observed_at": "2026-03-01T00:00:00Z",
+          "format": "short_video",
+          "duration_seconds": 40,
+          "views": 1000,
+          "likes": 10,
+          "comments": 2,
+          "shares": 1
+        },
+        {
+          "id": "5",
+          "url": "https://example.com/post/5",
+          "published_at": "2026-01-06T00:00:00Z",
+          "observed_at": "2026-03-01T00:00:00Z",
+          "format": "short_video",
+          "duration_seconds": 40,
+          "views": 1000,
+          "likes": 10,
+          "comments": 2,
+          "shares": 1
+        },
+        {
+          "id": "6",
+          "url": "https://example.com/post/6",
+          "published_at": "2026-01-07T00:00:00Z",
+          "observed_at": "2026-03-01T00:00:00Z",
+          "format": "short_video",
+          "duration_seconds": 40,
+          "views": 1000,
+          "likes": 10,
+          "comments": 2,
+          "shares": 1
+        }
+      ]
+    }
+  ]
+}

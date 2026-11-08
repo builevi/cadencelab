@@ -1,0 +1,11 @@
+{
+  "frozen_backend": true,
+  "auth_boundary": true,
+  "static_frontend": true,
+  "report_job": "completed",
+  "media": {
+    "words": 58,
+    "slices": 52,
+    "semantic_status": "unavailable"
+  }
+}

@@ -1,0 +1,775 @@
+{
+  "schema_version": "1.0",
+  "kind": "channel",
+  "data_source": "caller_supplied_snapshot",
+  "channels": [
+    {
+      "channel_id": "test",
+      "platform": "tiktok",
+      "name": "Fixture Channel",
+      "corpus_size": 7,
+      "totals": {
+        "views": {
+          "known_total": 6100,
+          "observed_posts": 7,
+          "missing_posts": 0
+        },
+        "likes": {
+          "known_total": 70,
+          "observed_posts": 7,
+          "missing_posts": 0
+        },
+        "comments": {
+          "known_total": 14,
+          "observed_posts": 7,
+          "missing_posts": 0
+        },
+        "shares": {
+          "known_total": 7,
+          "observed_posts": 7,
+          "missing_posts": 0
+        }
+      },
+      "performance": [
+        {
+          "post_id": "0",
+          "url": "https://example.com/post/0",
+          "views": 100,
+          "cohort": [
+            "short_video",
+            "30d_plus",
+            "30_60s"
+          ],
+          "peer_count": 6,
+          "peer_median_views": 1000.0,
+          "relative_views": 0.1,
+          "status": "below_peer_baseline",
+          "engagement_per_view": 0.13
+        },
+        {
+          "post_id": "1",
+          "url": "https://example.com/post/1",
+          "views": 1000,
+          "cohort": [
+            "short_video",
+            "30d_plus",
+            "30_60s"
+          ],
+          "peer_count": 6,
+          "peer_median_views": 1000.0,
+          "relative_views": 1.0,
+          "status": "within_peer_range",
+          "engagement_per_view": 0.013
+        },
+        {
+          "post_id": "2",
+          "url": "https://example.com/post/2",
+          "views": 1000,
+          "cohort": [
+            "short_video",
+            "30d_plus",
+            "30_60s"
+          ],
+          "peer_count": 6,
+          "peer_median_views": 1000.0,
+          "relative_views": 1.0,
+          "status": "within_peer_range",
+          "engagement_per_view": 0.013
+        },
+        {
+          "post_id": "3",
+          "url": "https://example.com/post/3",
+          "views": 1000,
+          "cohort": [
+            "short_video",
+            "30d_plus",
+            "30_60s"
+          ],
+          "peer_count": 6,
+          "peer_median_views": 1000.0,
+          "relative_views": 1.0,
+          "status": "within_peer_range",
+          "engagement_per_view": 0.013
+        },
+        {
+          "post_id": "4",
+          "url": "https://example.com/post/4",
+          "views": 1000,
+          "cohort": [
+            "short_video",
+            "30d_plus",
+            "30_60s"
+          ],
+          "peer_count": 6,
+          "peer_median_views": 1000.0,
+          "relative_views": 1.0,
+          "status": "within_peer_range",
+          "engagement_per_view": 0.013
+        },
+        {
+          "post_id": "5",
+          "url": "https://example.com/post/5",
+          "views": 1000,
+          "cohort": [
+            "short_video",
+            "30d_plus",
+            "30_60s"
+          ],
+          "peer_count": 6,
+          "peer_median_views": 1000.0,
+          "relative_views": 1.0,
+          "status": "within_peer_range",
+          "engagement_per_view": 0.013
+        },
+        {
+          "post_id": "6",
+          "url": "https://example.com/post/6",
+          "views": 1000,
+          "cohort": [
+            "short_video",
+            "30d_plus",
+            "30_60s"
+          ],
+          "peer_count": 6,
+          "peer_median_views": 1000.0,
+          "relative_views": 1.0,
+          "status": "within_peer_range",
+          "engagement_per_view": 0.013
+        }
+      ],
+      "qualitative_modules": [
+        {
+          "id": "brand_positioning",
+          "status": "requires_semantic_analysis",
+          "findings": [],
+          "missing": [
+            "validated structured semantic analysis and supporting evidence"
+          ]
+        },
+        {
+          "id": "tone_of_voice",
+          "status": "requires_semantic_analysis",
+          "findings": [],
+          "missing": [
+            "validated structured semantic analysis and supporting evidence"
+          ]
+        },
+        {
+          "id": "target_audience_clues",
+          "status": "requires_semantic_analysis",
+          "findings": [],
+          "missing": [
+            "validated structured semantic analysis and supporting evidence"
+          ]
+        },
+        {
+          "id": "posting_and_trends",
+          "status": "descriptive_only",
+          "findings": {
+            "posts_by_weekday_utc": {
+              "3": 1,
+              "4": 1,
+              "5": 1,
+              "6": 1,
+              "0": 1,
+              "1": 1,
+              "2": 1
+            },
+            "format_mix": {
+              "short_video": 7
+            }
+          },
+          "missing": [
+            "Repeated snapshots required to measure growth; no best-time causal inference."
+          ]
+        },
+        {
+          "id": "content_pillars",
+          "status": "requires_semantic_analysis",
+          "findings": [],
+          "missing": [
+            "validated structured semantic analysis and supporting evidence"
+          ]
+        },
+        {
+          "id": "content_structure_analysis",
+          "status": "requires_semantic_analysis",
+          "findings": [],
+          "missing": [
+            "validated structured semantic analysis and supporting evidence"
+          ]
+        },
+        {
+          "id": "transcript_analysis",
+          "status": "requires_semantic_analysis",
+          "findings": [],
+          "missing": [
+            "validated structured semantic analysis and supporting evidence"
+          ]
+        },
+        {
+          "id": "ad_strategy",
+          "status": "requires_semantic_analysis",
+          "findings": [],
+          "missing": [
+            "validated structured semantic analysis and supporting evidence"
+          ]
+        }
+      ],
+      "source_urls": [
+        "https://example.com/post/0",
+        "https://example.com/post/1",
+        "https://example.com/post/2",
+        "https://example.com/post/3",
+        "https://example.com/post/4",
+        "https://example.com/post/5",
+        "https://example.com/post/6"
+      ],
+      "snapshot_range": {
+        "from": "2026-03-01T00:00:00+00:00",
+        "to": "2026-03-01T00:00:00+00:00"
+      },
+      "publication_range": {
+        "from": "2026-01-01T00:00:00+00:00",
+        "to": "2026-01-07T00:00:00+00:00"
+      },
+      "semantic_analysis": {
+        "modules": [
+          {
+            "id": "brand_positioning",
+            "status": "analyzed",
+            "summary": "Nội dung thể hiện hướng tư vấn lựa chọn kem dưỡng dựa trên thành phần và nhu cầu da dầu, chưa đủ xác định định vị khác biệt của thương hiệu.",
+            "findings": [
+              {
+                "text": "Caption định hướng giáo dục người mua cách lựa chọn sản phẩm phù hợp, thay vì giới thiệu một thương hiệu cụ thể.",
+                "evidence": [
+                  {
+                    "post_id": "6",
+                    "field": "caption",
+                    "quote": "Hướng dẫn đọc bảng thành phần để lựa chọn kem dưỡng phù hợp với da dầu."
+                  }
+                ]
+              }
+            ],
+            "missing": [
+              "Thông tin thương hiệu, giá trị cốt lõi và điểm khác biệt so với đối thủ."
+            ]
+          },
+          {
+            "id": "tone_of_voice",
+            "status": "analyzed",
+            "summary": "Giọng văn hướng dẫn, trực tiếp và thiên về hành động thực tế.",
+            "findings": [
+              {
+                "text": "Cách mở đầu bằng “Hướng dẫn” tạo giọng tư vấn; lời nhắc lưu lại đưa ra hành động cụ thể, gắn với quyết định mua.",
+                "evidence": [
+                  {
+                    "post_id": "6",
+                    "field": "caption",
+                    "quote": "Hướng dẫn đọc bảng thành phần để lựa chọn kem dưỡng phù hợp với da dầu."
+                  },
+                  {
+                    "post_id": "6",
+                    "field": "caption",
+                    "quote": "Lưu lại ba bước kiểm tra trước khi mua."
+                  }
+                ]
+              }
+            ],
+            "missing": []
+          },
+          {
+            "id": "target_audience_clues",
+            "status": "analyzed",
+            "summary": "Ngôn ngữ gợi ý nội dung dành cho người quan tâm kem dưỡng cho da dầu và muốn kiểm tra thành phần trước khi mua.",
+            "findings": [
+              {
+                "text": "Nhóm người đọc được gợi ý là người có nhu cầu chọn kem dưỡng cho da dầu, muốn có hướng dẫn kiểm tra trước mua. Đây là giả thuyết từ nội dung, không phải dữ liệu đo lường khán giả.",
+                "evidence": [
+                  {
+                    "post_id": "6",
+                    "field": "caption",
+                    "quote": "Hướng dẫn đọc bảng thành phần để lựa chọn kem dưỡng phù hợp với da dầu. Lưu lại ba bước kiểm tra trước khi mua."
+                  }
+                ]
+              }
+            ],
+            "missing": [
+              "Dữ liệu khán giả thực tế để kiểm chứng giả thuyết."
+            ]
+          },
+          {
+            "id": "posting_and_trends",
+            "status": "analyzed",
+            "summary": "Các caption trong mẫu lặp nguyên văn; chưa có căn cứ xác định lịch đăng hoặc xu hướng theo thời gian.",
+            "findings": [
+              {
+                "text": "Caption lặp nguyên văn giữa các bài được đối chiếu, cho thấy sự lặp lại thông điệp trong mẫu, không chứng minh việc bắt xu hướng.",
+                "evidence": [
+                  {
+                    "post_id": "6",
+                    "field": "caption",
+                    "quote": "Hướng dẫn đọc bảng thành phần để lựa chọn kem dưỡng phù hợp với da dầu. Lưu lại ba bước kiểm tra trước khi mua."
+                  },
+                  {
+                    "post_id": "3",
+                    "field": "caption",
+                    "quote": "Hướng dẫn đọc bảng thành phần để lựa chọn kem dưỡng phù hợp với da dầu. Lưu lại ba bước kiểm tra trước khi mua."
+                  },
+                  {
+                    "post_id": "0",
+                    "field": "caption",
+                    "quote": "Hướng dẫn đọc bảng thành phần để lựa chọn kem dưỡng phù hợp với da dầu. Lưu lại ba bước kiểm tra trước khi mua."
+                  }
+                ]
+              }
+            ],
+            "missing": [
+              "Ngày giờ đăng để phân tích tần suất và diễn biến theo thời gian.",
+              "Dữ liệu nội dung và hiệu quả theo thời gian để đánh giá xu hướng."
+            ]
+          },
+          {
+            "id": "content_pillars",
+            "status": "analyzed",
+            "summary": "Mẫu chỉ thể hiện một trụ cột: hướng dẫn lựa chọn kem dưỡng cho da dầu thông qua đọc thành phần.",
+            "findings": [
+              {
+                "text": "Chủ đề thể hiện rõ là kiến thức lựa chọn sản phẩm chăm sóc da: đọc bảng thành phần và kiểm tra trước khi mua. Chưa đủ cơ sở chia thành nhiều trụ cột độc lập.",
+                "evidence": [
+                  {
+                    "post_id": "5",
+                    "field": "caption",
+                    "quote": "Hướng dẫn đọc bảng thành phần để lựa chọn kem dưỡng phù hợp với da dầu. Lưu lại ba bước kiểm tra trước khi mua."
+                  }
+                ]
+              }
+            ],
+            "missing": [
+              "Các bài có chủ đề khác để xác định độ đa dạng của hệ thống trụ cột."
+            ]
+          },
+          {
+            "id": "content_structure_analysis",
+            "status": "analyzed",
+            "summary": "Caption gồm lời hứa hướng dẫn cho nhu cầu cụ thể, tiếp theo là lời kêu gọi lưu lại cùng khung ba bước.",
+            "findings": [
+              {
+                "text": "Câu đầu nêu cách làm và lợi ích lựa chọn kem dưỡng phù hợp với da dầu; câu sau kêu gọi lưu lại và giới thiệu khung ba bước. Caption không cung cấp nội dung chi tiết của các bước.",
+                "evidence": [
+                  {
+                    "post_id": "4",
+                    "field": "caption",
+                    "quote": "Hướng dẫn đọc bảng thành phần để lựa chọn kem dưỡng phù hợp với da dầu."
+                  },
+                  {
+                    "post_id": "4",
+                    "field": "caption",
+                    "quote": "Lưu lại ba bước kiểm tra trước khi mua."
+                  }
+                ]
+              }
+            ],
+            "missing": [
+              "Nội dung đầy đủ của bài hoặc video để kiểm tra cách triển khai ba bước."
+            ]
+          },
+          {
+            "id": "transcript_analysis",
+            "status": "insufficient_evidence",
+            "summary": "",
+            "findings": [],
+            "missing": [
+              "Transcript có nội dung; các trường transcript được cung cấp đều trống."
+            ]
+          },
+          {
+            "id": "ad_strategy",
+            "status": "insufficient_evidence",
+            "summary": "",
+            "findings": [],
+            "missing": [
+              "Nội dung ad_text được cung cấp rõ ràng; các trường ad_text hiện đều trống."
+            ]
+          }
+        ],
+        "sampled_posts": 7,
+        "total_posts": 7,
+        "sample_strategy": "target video first if specified, then latest publication date and post ID; bounded text fields",
+        "provider": "codex_local",
+        "model": "gpt-6.1-sol",
+        "fallback_reason": null,
+        "evidence_validation": "exact quotes checked; interpretation still requires human review"
+      }
+    }
+  ],
+  "target_post_id": null,
+  "methodology": {
+    "low_performance_rule": "views < 0.5 × leave-one-out cohort median",
+    "minimum_peers": 5,
+    "cohorts": [
+      "same channel",
+      "same format",
+      "same duration bucket",
+      "same post-age bucket",
+      "snapshots within 24 hours"
+    ],
+    "engagement_definition": "(likes + comments + shares) / views; only when all inputs are known"
+  },
+  "limitations": [
+    "Relative views flag is descriptive, not proof of a weak hook or distribution restriction.",
+    "Views are platform-specific counters; cross-platform totals are not unique people.",
+    "No automatic URL collection or retention prediction. AI interpretations need review."
+  ],
+  "language": "vi",
+  "analysis_mode": "semantic",
+  "report_parts": {
+    "report_part_1": {
+      "quantitative_synthesis": [
+        {
+          "channel_id": "test",
+          "platform": "tiktok",
+          "totals": {
+            "views": {
+              "known_total": 6100,
+              "observed_posts": 7,
+              "missing_posts": 0
+            },
+            "likes": {
+              "known_total": 70,
+              "observed_posts": 7,
+              "missing_posts": 0
+            },
+            "comments": {
+              "known_total": 14,
+              "observed_posts": 7,
+              "missing_posts": 0
+            },
+            "shares": {
+              "known_total": 7,
+              "observed_posts": 7,
+              "missing_posts": 0
+            }
+          },
+          "publication_range": {
+            "from": "2026-01-01T00:00:00+00:00",
+            "to": "2026-01-07T00:00:00+00:00"
+          },
+          "snapshot_range": {
+            "from": "2026-03-01T00:00:00+00:00",
+            "to": "2026-03-01T00:00:00+00:00"
+          },
+          "posting_statistics": {
+            "posts_by_weekday_utc": {
+              "3": 1,
+              "4": 1,
+              "5": 1,
+              "6": 1,
+              "0": 1,
+              "1": 1,
+              "2": 1
+            },
+            "format_mix": {
+              "short_video": 7
+            }
+          },
+          "performance": [
+            {
+              "post_id": "0",
+              "url": "https://example.com/post/0",
+              "views": 100,
+              "cohort": [
+                "short_video",
+                "30d_plus",
+                "30_60s"
+              ],
+              "peer_count": 6,
+              "peer_median_views": 1000.0,
+              "relative_views": 0.1,
+              "status": "below_peer_baseline",
+              "engagement_per_view": 0.13
+            },
+            {
+              "post_id": "1",
+              "url": "https://example.com/post/1",
+              "views": 1000,
+              "cohort": [
+                "short_video",
+                "30d_plus",
+                "30_60s"
+              ],
+              "peer_count": 6,
+              "peer_median_views": 1000.0,
+              "relative_views": 1.0,
+              "status": "within_peer_range",
+              "engagement_per_view": 0.013
+            },
+            {
+              "post_id": "2",
+              "url": "https://example.com/post/2",
+              "views": 1000,
+              "cohort": [
+                "short_video",
+                "30d_plus",
+                "30_60s"
+              ],
+              "peer_count": 6,
+              "peer_median_views": 1000.0,
+              "relative_views": 1.0,
+              "status": "within_peer_range",
+              "engagement_per_view": 0.013
+            },
+            {
+              "post_id": "3",
+              "url": "https://example.com/post/3",
+              "views": 1000,
+              "cohort": [
+                "short_video",
+                "30d_plus",
+                "30_60s"
+              ],
+              "peer_count": 6,
+              "peer_median_views": 1000.0,
+              "relative_views": 1.0,
+              "status": "within_peer_range",
+              "engagement_per_view": 0.013
+            },
+            {
+              "post_id": "4",
+              "url": "https://example.com/post/4",
+              "views": 1000,
+              "cohort": [
+                "short_video",
+                "30d_plus",
+                "30_60s"
+              ],
+              "peer_count": 6,
+              "peer_median_views": 1000.0,
+              "relative_views": 1.0,
+              "status": "within_peer_range",
+              "engagement_per_view": 0.013
+            },
+            {
+              "post_id": "5",
+              "url": "https://example.com/post/5",
+              "views": 1000,
+              "cohort": [
+                "short_video",
+                "30d_plus",
+                "30_60s"
+              ],
+              "peer_count": 6,
+              "peer_median_views": 1000.0,
+              "relative_views": 1.0,
+              "status": "within_peer_range",
+              "engagement_per_view": 0.013
+            },
+            {
+              "post_id": "6",
+              "url": "https://example.com/post/6",
+              "views": 1000,
+              "cohort": [
+                "short_video",
+                "30d_plus",
+                "30_60s"
+              ],
+              "peer_count": 6,
+              "peer_median_views": 1000.0,
+              "relative_views": 1.0,
+              "status": "within_peer_range",
+              "engagement_per_view": 0.013
+            }
+          ]
+        }
+      ]
+    },
+    "report_part_2": {
+      "qualitative_analysis": [
+        {
+          "channel_id": "test",
+          "platform": "tiktok",
+          "modules": [
+            {
+              "id": "brand_positioning",
+              "status": "analyzed",
+              "summary": "Nội dung thể hiện hướng tư vấn lựa chọn kem dưỡng dựa trên thành phần và nhu cầu da dầu, chưa đủ xác định định vị khác biệt của thương hiệu.",
+              "findings": [
+                {
+                  "text": "Caption định hướng giáo dục người mua cách lựa chọn sản phẩm phù hợp, thay vì giới thiệu một thương hiệu cụ thể.",
+                  "evidence": [
+                    {
+                      "post_id": "6",
+                      "field": "caption",
+                      "quote": "Hướng dẫn đọc bảng thành phần để lựa chọn kem dưỡng phù hợp với da dầu."
+                    }
+                  ]
+                }
+              ],
+              "missing": [
+                "Thông tin thương hiệu, giá trị cốt lõi và điểm khác biệt so với đối thủ."
+              ]
+            },
+            {
+              "id": "tone_of_voice",
+              "status": "analyzed",
+              "summary": "Giọng văn hướng dẫn, trực tiếp và thiên về hành động thực tế.",
+              "findings": [
+                {
+                  "text": "Cách mở đầu bằng “Hướng dẫn” tạo giọng tư vấn; lời nhắc lưu lại đưa ra hành động cụ thể, gắn với quyết định mua.",
+                  "evidence": [
+                    {
+                      "post_id": "6",
+                      "field": "caption",
+                      "quote": "Hướng dẫn đọc bảng thành phần để lựa chọn kem dưỡng phù hợp với da dầu."
+                    },
+                    {
+                      "post_id": "6",
+                      "field": "caption",
+                      "quote": "Lưu lại ba bước kiểm tra trước khi mua."
+                    }
+                  ]
+                }
+              ],
+              "missing": []
+            },
+            {
+              "id": "target_audience_clues",
+              "status": "analyzed",
+              "summary": "Ngôn ngữ gợi ý nội dung dành cho người quan tâm kem dưỡng cho da dầu và muốn kiểm tra thành phần trước khi mua.",
+              "findings": [
+                {
+                  "text": "Nhóm người đọc được gợi ý là người có nhu cầu chọn kem dưỡng cho da dầu, muốn có hướng dẫn kiểm tra trước mua. Đây là giả thuyết từ nội dung, không phải dữ liệu đo lường khán giả.",
+                  "evidence": [
+                    {
+                      "post_id": "6",
+                      "field": "caption",
+                      "quote": "Hướng dẫn đọc bảng thành phần để lựa chọn kem dưỡng phù hợp với da dầu. Lưu lại ba bước kiểm tra trước khi mua."
+                    }
+                  ]
+                }
+              ],
+              "missing": [
+                "Dữ liệu khán giả thực tế để kiểm chứng giả thuyết."
+              ]
+            },
+            {
+              "id": "posting_and_trends",
+              "status": "analyzed",
+              "summary": "Các caption trong mẫu lặp nguyên văn; chưa có căn cứ xác định lịch đăng hoặc xu hướng theo thời gian.",
+              "findings": [
+                {
+                  "text": "Caption lặp nguyên văn giữa các bài được đối chiếu, cho thấy sự lặp lại thông điệp trong mẫu, không chứng minh việc bắt xu hướng.",
+                  "evidence": [
+                    {
+                      "post_id": "6",
+                      "field": "caption",
+                      "quote": "Hướng dẫn đọc bảng thành phần để lựa chọn kem dưỡng phù hợp với da dầu. Lưu lại ba bước kiểm tra trước khi mua."
+                    },
+                    {
+                      "post_id": "3",
+                      "field": "caption",
+                      "quote": "Hướng dẫn đọc bảng thành phần để lựa chọn kem dưỡng phù hợp với da dầu. Lưu lại ba bước kiểm tra trước khi mua."
+                    },
+                    {
+                      "post_id": "0",
+                      "field": "caption",
+                      "quote": "Hướng dẫn đọc bảng thành phần để lựa chọn kem dưỡng phù hợp với da dầu. Lưu lại ba bước kiểm tra trước khi mua."
+                    }
+                  ]
+                }
+              ],
+              "missing": [
+                "Ngày giờ đăng để phân tích tần suất và diễn biến theo thời gian.",
+                "Dữ liệu nội dung và hiệu quả theo thời gian để đánh giá xu hướng."
+              ]
+            },
+            {
+              "id": "content_pillars",
+              "status": "analyzed",
+              "summary": "Mẫu chỉ thể hiện một trụ cột: hướng dẫn lựa chọn kem dưỡng cho da dầu thông qua đọc thành phần.",
+              "findings": [
+                {
+                  "text": "Chủ đề thể hiện rõ là kiến thức lựa chọn sản phẩm chăm sóc da: đọc bảng thành phần và kiểm tra trước khi mua. Chưa đủ cơ sở chia thành nhiều trụ cột độc lập.",
+                  "evidence": [
+                    {
+                      "post_id": "5",
+                      "field": "caption",
+                      "quote": "Hướng dẫn đọc bảng thành phần để lựa chọn kem dưỡng phù hợp với da dầu. Lưu lại ba bước kiểm tra trước khi mua."
+                    }
+                  ]
+                }
+              ],
+              "missing": [
+                "Các bài có chủ đề khác để xác định độ đa dạng của hệ thống trụ cột."
+              ]
+            },
+            {
+              "id": "content_structure_analysis",
+              "status": "analyzed",
+              "summary": "Caption gồm lời hứa hướng dẫn cho nhu cầu cụ thể, tiếp theo là lời kêu gọi lưu lại cùng khung ba bước.",
+              "findings": [
+                {
+                  "text": "Câu đầu nêu cách làm và lợi ích lựa chọn kem dưỡng phù hợp với da dầu; câu sau kêu gọi lưu lại và giới thiệu khung ba bước. Caption không cung cấp nội dung chi tiết của các bước.",
+                  "evidence": [
+                    {
+                      "post_id": "4",
+                      "field": "caption",
+                      "quote": "Hướng dẫn đọc bảng thành phần để lựa chọn kem dưỡng phù hợp với da dầu."
+                    },
+                    {
+                      "post_id": "4",
+                      "field": "caption",
+                      "quote": "Lưu lại ba bước kiểm tra trước khi mua."
+                    }
+                  ]
+                }
+              ],
+              "missing": [
+                "Nội dung đầy đủ của bài hoặc video để kiểm tra cách triển khai ba bước."
+              ]
+            },
+            {
+              "id": "transcript_analysis",
+              "status": "insufficient_evidence",
+              "summary": "",
+              "findings": [],
+              "missing": [
+                "Transcript có nội dung; các trường transcript được cung cấp đều trống."
+              ]
+            },
+            {
+              "id": "ad_strategy",
+              "status": "insufficient_evidence",
+              "summary": "",
+              "findings": [],
+              "missing": [
+                "Nội dung ad_text được cung cấp rõ ràng; các trường ad_text hiện đều trống."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "report_part_3": {
+      "evaluations": [
+        {
+          "channel_id": "test",
+          "platform": "tiktok",
+          "below_baseline_posts": [
+            {
+              "post_id": "0",
+              "url": "https://example.com/post/0",
+              "relative_views": 0.1,
+              "action": "Review this post against matched peers; obtain retention/transcript/media evidence before attributing cause."
+            }
+          ],
+          "insufficient_baseline_posts": 0,
+          "recommended_data": []
+        }
+      ],
+      "video_ideas": [],
+      "video_ideas_status": "requires_editorial_generation"
+    }
+  },
+  "semantic_status": "completed"
+}

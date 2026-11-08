@@ -1,0 +1,33 @@
+/private/tmp/sociallens-algo-audit-20261031/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+test_data_driven_trend_api (test_algorithms.APITests.test_data_driven_trend_api) ... ok
+test_gap_evidence_passes_through (test_algorithms.APITests.test_gap_evidence_passes_through) ... ok
+test_gap_missing_demand_is_explicit (test_algorithms.APITests.test_gap_missing_demand_is_explicit) ... ok
+test_import_from_documented_working_directory (test_algorithms.APITests.test_import_from_documented_working_directory) ... ok
+test_invalid_requests_return_422 (test_algorithms.APITests.test_invalid_requests_return_422) ... ok
+test_live_feature_analysis (test_algorithms.APITests.test_live_feature_analysis) ... ok
+test_synthetic_demo_labeled_and_rng_isolated (test_algorithms.APITests.test_synthetic_demo_labeled_and_rng_isolated) ... ok
+test_derivative_uses_seconds (test_algorithms.CFITests.test_derivative_uses_seconds) ... ok
+test_hook_does_not_hide_high_load (test_algorithms.CFITests.test_hook_does_not_hide_high_load) ... ok
+test_invalid_inputs_rejected (test_algorithms.CFITests.test_invalid_inputs_rejected) ... ok
+test_repeated_analysis_is_deterministic_and_bounded (test_algorithms.CFITests.test_repeated_analysis_is_deterministic_and_bounded) ... ok
+test_single_slice_supported (test_algorithms.CFITests.test_single_slice_supported) ... ok
+test_static_but_semantic_content_is_not_automatic_boredom (test_algorithms.CFITests.test_static_but_semantic_content_is_not_automatic_boredom) ... ok
+test_zero_signals_are_flagged_even_during_hook (test_algorithms.CFITests.test_zero_signals_are_flagged_even_during_hook) ... ok
+test_covered_question_is_not_reported_as_gap (test_algorithms.GapTests.test_covered_question_is_not_reported_as_gap) ... ok
+test_demand_increases_score_not_probability (test_algorithms.GapTests.test_demand_increases_score_not_probability) ... ok
+test_duplicate_query_does_not_inflate_demand (test_algorithms.GapTests.test_duplicate_query_does_not_inflate_demand) ... ok
+test_invalid_embeddings_and_counts (test_algorithms.GapTests.test_invalid_embeddings_and_counts) ... ok
+test_no_evidence_means_no_opportunities (test_algorithms.GapTests.test_no_evidence_means_no_opportunities) ... ok
+test_scale_and_row_order_invariance (test_algorithms.GapTests.test_scale_and_row_order_invariance) ... ok
+test_different_observations_change_forecast (test_algorithms.SEIRTests.test_different_observations_change_forecast) ... ok
+test_fit_and_synthetic_holdout (test_algorithms.SEIRTests.test_fit_and_synthetic_holdout) ... ok
+test_future_days_and_horizon_invariance (test_algorithms.SEIRTests.test_future_days_and_horizon_invariance) ... ok
+test_inactive_scenario_is_finite (test_algorithms.SEIRTests.test_inactive_scenario_is_finite) ... ok
+test_invalid_history_and_population (test_algorithms.SEIRTests.test_invalid_history_and_population) ... ok
+test_mass_and_nonnegativity (test_algorithms.SEIRTests.test_mass_and_nonnegativity) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.721s
+
+OK

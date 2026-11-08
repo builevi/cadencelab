@@ -1,0 +1,94 @@
+{
+  "name": "cadencelab-desktop",
+  "version": "0.3.1",
+  "private": true,
+  "description": "CadenceLab local desktop analysis",
+  "author": "CadenceLab",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test tests/*.test.cjs",
+    "pack": "electron-builder --dir",
+    "dist:mac": "electron-builder --mac dmg --arm64",
+    "dist:win": "electron-builder --win nsis --x64"
+  },
+  "devDependencies": {
+    "electron": "45.2.3",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "app.cadencelab.desktop",
+    "productName": "CadenceLab",
+    "asar": true,
+    "directories": {
+      "output": "../../release"
+    },
+    "files": [
+      "main.cjs",
+      "preload.cjs",
+      "settings-store.cjs",
+      "package.json",
+      "updates.cjs"
+    ],
+    "extraResources": [
+      {
+        "from": "../../build/desktop/cadencelab-backend",
+        "to": "backend"
+      },
+      {
+        "from": "../../build/desktop/frontend",
+        "to": "frontend"
+      },
+      {
+        "from": "../../.sociallens/models/faster-whisper-tiny",
+        "to": "models/faster-whisper-tiny",
+        "filter": [
+          "**/*",
+          "!.cache/**"
+        ]
+      },
+      {
+        "from": "../../docs/DESKTOP_NOTICES.txt",
+        "to": "DESKTOP_NOTICES.txt"
+      }
+    ],
+    "mac": {
+      "category": "public.app-category.productivity",
+      "identity": "-",
+      "hardenedRuntime": false,
+      "gatekeeperAssess": false,
+      "target": [
+        "dmg"
+      ],
+      "icon": "assets/icon.png"
+    },
+    "dmg": {
+      "title": "CadenceLab Installer",
+      "contents": [
+        {
+          "x": 150,
+          "y": 180
+        },
+        {
+          "x": 430,
+          "y": 180,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "assets/icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "artifactName": "CadenceLab-${version}-${os}-${arch}.${ext}",
+    "electronDist": "node_modules/electron/dist"
+  }
+}

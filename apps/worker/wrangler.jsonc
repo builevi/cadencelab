@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cadencelab",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-01",
+  "vars": {
+    "ORIGIN_URL": "https://towards-judge-asks-katrina.trycloudflare.com"
+  }
+}

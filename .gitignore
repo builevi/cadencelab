@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.sociallens/
+
+.env.local
+.env
+
+**/node_modules/
+**/.next*/
+apps/web/out/
+build/
+release/
+
+# Distribution artifacts and downloaded vendor tools
+apps/web/public/downloads/
+tools/bin/
+tools/vendor/
+AI4Biz_CadenceLab_2026/
+AI4Biz_CadenceLab_2026.zip
+.DS_Store
+**/.env*
+!/.env.example
+**/.wrangler/
+*.log
+docs/research/*.png
+docs/research/*.jpg
+# Generated compiler output and third-party reverse-engineering trial artifacts
+*.tsbuildinfo
+apps/worker/worker-configuration.d.ts
+docs/research/craft-anything-trial/
+docs/research/*.tar.gz

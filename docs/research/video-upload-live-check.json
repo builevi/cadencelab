@@ -1,0 +1,13 @@
+{
+  "fixture": "generated test pattern + synthesized English speech",
+  "elapsed_seconds": 24.22,
+  "job_state": "completed",
+  "processing_status": "completed",
+  "duration_seconds": 26.0,
+  "transcript_status": "transcribed",
+  "recognized_words": 61,
+  "semantic_status": "estimated",
+  "semantic_error": null,
+  "cfi_slices": 52,
+  "original_removed": true
+}

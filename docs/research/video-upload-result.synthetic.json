@@ -1,0 +1,1426 @@
+{
+  "mode": "uploaded_video",
+  "processing_status": "completed",
+  "duration_seconds": 26.0,
+  "time_step": 0.5,
+  "audio_present": true,
+  "transcript": {
+    "status": "transcribed",
+    "words": [
+      {
+        "start": 0.0,
+        "end": 0.54,
+        "text": " Before",
+        "probability": 0.3210151791572571
+      },
+      {
+        "start": 0.54,
+        "end": 0.88,
+        "text": " you",
+        "probability": 0.3037765920162201
+      },
+      {
+        "start": 0.88,
+        "end": 1.14,
+        "text": " may",
+        "probability": 0.27631914615631104
+      },
+      {
+        "start": 1.14,
+        "end": 1.58,
+        "text": " amo",
+        "probability": 0.31877268105745316
+      },
+      {
+        "start": 1.58,
+        "end": 1.88,
+        "text": " is",
+        "probability": 0.17783132195472717
+      },
+      {
+        "start": 1.88,
+        "end": 2.12,
+        "text": " poor",
+        "probability": 0.19661831855773926
+      },
+      {
+        "start": 2.12,
+        "end": 2.42,
+        "text": " in",
+        "probability": 0.3566715121269226
+      },
+      {
+        "start": 2.42,
+        "end": 2.7,
+        "text": " air,",
+        "probability": 0.7610536217689514
+      },
+      {
+        "start": 3.08,
+        "end": 3.28,
+        "text": " read",
+        "probability": 0.3564188480377197
+      },
+      {
+        "start": 3.28,
+        "end": 3.58,
+        "text": " the",
+        "probability": 0.036026764661073685
+      },
+      {
+        "start": 3.58,
+        "end": 3.86,
+        "text": " English",
+        "probability": 0.41566354036331177
+      },
+      {
+        "start": 3.86,
+        "end": 4.26,
+        "text": " and",
+        "probability": 0.12361573427915573
+      },
+      {
+        "start": 4.26,
+        "end": 4.62,
+        "text": " read,",
+        "probability": 0.6168893575668335
+      },
+      {
+        "start": 4.98,
+        "end": 5.22,
+        "text": " for",
+        "probability": 0.0946677178144455
+      },
+      {
+        "start": 5.22,
+        "end": 5.76,
+        "text": " check",
+        "probability": 0.5264966487884521
+      },
+      {
+        "start": 5.76,
+        "end": 5.98,
+        "text": " or",
+        "probability": 0.13079175353050232
+      },
+      {
+        "start": 5.98,
+        "end": 6.32,
+        "text": " answer,",
+        "probability": 0.06243576109409332
+      },
+      {
+        "start": 6.64,
+        "end": 6.86,
+        "text": " quote",
+        "probability": 0.0293453149497509
+      },
+      {
+        "start": 6.86,
+        "end": 7.16,
+        "text": " not",
+        "probability": 0.16135543584823608
+      },
+      {
+        "start": 7.16,
+        "end": 7.62,
+        "text": " content",
+        "probability": 0.19411692023277283
+      },
+      {
+        "start": 7.62,
+        "end": 7.94,
+        "text": " from",
+        "probability": 0.7866649031639099
+      },
+      {
+        "start": 7.94,
+        "end": 8.1,
+        "text": " the",
+        "probability": 0.1568860113620758
+      },
+      {
+        "start": 8.1,
+        "end": 8.4,
+        "text": " run,",
+        "probability": 0.18205232918262482
+      },
+      {
+        "start": 8.76,
+        "end": 9.18,
+        "text": " read,",
+        "probability": 0.16221553087234497
+      },
+      {
+        "start": 9.4,
+        "end": 9.74,
+        "text": " look",
+        "probability": 0.7901986241340637
+      },
+      {
+        "start": 9.74,
+        "end": 10.04,
+        "text": " for",
+        "probability": 0.9064056277275085
+      },
+      {
+        "start": 10.04,
+        "end": 10.4,
+        "text": " Greek",
+        "probability": 0.19278952479362488
+      },
+      {
+        "start": 10.4,
+        "end": 10.7,
+        "text": " and",
+        "probability": 0.2460675984621048
+      },
+      {
+        "start": 10.7,
+        "end": 10.96,
+        "text": " read,",
+        "probability": 0.2812451720237732
+      },
+      {
+        "start": 11.12,
+        "end": 11.48,
+        "text": " or",
+        "probability": 0.32804152369499207
+      },
+      {
+        "start": 11.48,
+        "end": 11.48,
+        "text": " help",
+        "probability": 0.03966484218835831
+      },
+      {
+        "start": 11.48,
+        "end": 11.84,
+        "text": " us",
+        "probability": 0.679936408996582
+      },
+      {
+        "start": 11.84,
+        "end": 12.12,
+        "text": " in",
+        "probability": 0.47184237837791443
+      },
+      {
+        "start": 12.12,
+        "end": 12.34,
+        "text": " her",
+        "probability": 0.6320531368255615
+      },
+      {
+        "start": 12.34,
+        "end": 12.66,
+        "text": " plot,",
+        "probability": 0.15059174597263336
+      },
+      {
+        "start": 13.28,
+        "end": 13.58,
+        "text": " as",
+        "probability": 0.5293303728103638
+      },
+      {
+        "start": 13.58,
+        "end": 13.94,
+        "text": " as",
+        "probability": 0.06786809116601944
+      },
+      {
+        "start": 13.94,
+        "end": 14.16,
+        "text": " more",
+        "probability": 0.3076622486114502
+      },
+      {
+        "start": 14.16,
+        "end": 14.36,
+        "text": " or",
+        "probability": 0.15466798841953278
+      },
+      {
+        "start": 14.36,
+        "end": 14.56,
+        "text": " more",
+        "probability": 0.6729583740234375
+      },
+      {
+        "start": 14.56,
+        "end": 14.9,
+        "text": " on",
+        "probability": 0.10735828429460526
+      },
+      {
+        "start": 14.9,
+        "end": 15.16,
+        "text": " you",
+        "probability": 0.5172593593597412
+      },
+      {
+        "start": 15.16,
+        "end": 15.48,
+        "text": " am,",
+        "probability": 0.47794076800346375
+      },
+      {
+        "start": 15.66,
+        "end": 15.94,
+        "text": " before",
+        "probability": 0.20706738531589508
+      },
+      {
+        "start": 15.94,
+        "end": 16.38,
+        "text": " using",
+        "probability": 0.5547181963920593
+      },
+      {
+        "start": 16.38,
+        "end": 17.0,
+        "text": " anew,",
+        "probability": 0.2686888352036476
+      },
+      {
+        "start": 17.2,
+        "end": 17.3,
+        "text": " quote",
+        "probability": 0.8663361072540283
+      },
+      {
+        "start": 17.3,
+        "end": 17.62,
+        "text": " not",
+        "probability": 0.9658709168434143
+      },
+      {
+        "start": 17.62,
+        "end": 17.88,
+        "text": " on",
+        "probability": 0.948247492313385
+      },
+      {
+        "start": 17.88,
+        "end": 18.08,
+        "text": " you",
+        "probability": 0.5693042874336243
+      },
+      {
+        "start": 18.08,
+        "end": 18.44,
+        "text": " first,",
+        "probability": 0.5119364261627197
+      },
+      {
+        "start": 18.78,
+        "end": 19.02,
+        "text": " size",
+        "probability": 0.45695164799690247
+      },
+      {
+        "start": 19.02,
+        "end": 19.38,
+        "text": " is",
+        "probability": 0.7678202986717224
+      },
+      {
+        "start": 19.38,
+        "end": 19.64,
+        "text": " check,",
+        "probability": 0.6109780073165894
+      },
+      {
+        "start": 19.78,
+        "end": 20.0,
+        "text": " quote",
+        "probability": 0.05544811487197876
+      },
+      {
+        "start": 20.0,
+        "end": 20.3,
+        "text": " for",
+        "probability": 0.5740323662757874
+      },
+      {
+        "start": 20.3,
+        "end": 20.52,
+        "text": " you,",
+        "probability": 0.6316675543785095
+      },
+      {
+        "start": 20.58,
+        "end": 20.92,
+        "text": " next",
+        "probability": 0.16600719094276428
+      },
+      {
+        "start": 20.92,
+        "end": 21.22,
+        "text": " song",
+        "probability": 0.1328449696302414
+      },
+      {
+        "start": 21.22,
+        "end": 21.5,
+        "text": " being",
+        "probability": 0.5584354996681213
+      },
+      {
+        "start": 21.5,
+        "end": 21.78,
+        "text": " read.",
+        "probability": 0.28571563959121704
+      }
+    ],
+    "language": "en",
+    "language_probability": 1.0,
+    "model": "faster-whisper-tiny",
+    "limitations": "ASR words and timestamps are estimates; verify the transcript."
+  },
+  "semantic_analysis": {
+    "status": "estimated",
+    "scope": "spoken_transcript_only",
+    "provider": "codex_local",
+    "model": "gpt-6.1-sol",
+    "method": "heuristic model ratings with exact ASR quotes; empty spoken windows set to zero",
+    "evidence": [
+      {
+        "index": 0,
+        "density": 0.1,
+        "quote": " Before"
+      },
+      {
+        "index": 1,
+        "density": 0.1,
+        "quote": " you"
+      },
+      {
+        "index": 2,
+        "density": 0.1,
+        "quote": " may amo"
+      },
+      {
+        "index": 3,
+        "density": 0.1,
+        "quote": " is"
+      },
+      {
+        "index": 4,
+        "density": 0.15,
+        "quote": " poor in"
+      },
+      {
+        "index": 5,
+        "density": 0.15,
+        "quote": " air,"
+      },
+      {
+        "index": 6,
+        "density": 0.3,
+        "quote": " read the"
+      },
+      {
+        "index": 7,
+        "density": 0.3,
+        "quote": " English"
+      },
+      {
+        "index": 8,
+        "density": 0.15,
+        "quote": " and read,"
+      },
+      {
+        "index": 10,
+        "density": 0.2,
+        "quote": " for check"
+      },
+      {
+        "index": 11,
+        "density": 0.1,
+        "quote": " or"
+      },
+      {
+        "index": 12,
+        "density": 0.2,
+        "quote": " answer,"
+      },
+      {
+        "index": 13,
+        "density": 0.15,
+        "quote": " quote"
+      },
+      {
+        "index": 14,
+        "density": 0.2,
+        "quote": " not content"
+      },
+      {
+        "index": 15,
+        "density": 0.1,
+        "quote": " from"
+      },
+      {
+        "index": 16,
+        "density": 0.15,
+        "quote": " the run,"
+      },
+      {
+        "index": 17,
+        "density": 0.1,
+        "quote": " read,"
+      },
+      {
+        "index": 19,
+        "density": 0.25,
+        "quote": " look for"
+      },
+      {
+        "index": 20,
+        "density": 0.3,
+        "quote": " Greek"
+      },
+      {
+        "index": 21,
+        "density": 0.15,
+        "quote": " and read,"
+      },
+      {
+        "index": 22,
+        "density": 0.15,
+        "quote": " or help"
+      },
+      {
+        "index": 23,
+        "density": 0.1,
+        "quote": " us in"
+      },
+      {
+        "index": 24,
+        "density": 0.1,
+        "quote": " her"
+      },
+      {
+        "index": 25,
+        "density": 0.15,
+        "quote": " plot,"
+      },
+      {
+        "index": 26,
+        "density": 0.05,
+        "quote": " as"
+      },
+      {
+        "index": 27,
+        "density": 0.05,
+        "quote": " as"
+      },
+      {
+        "index": 28,
+        "density": 0.1,
+        "quote": " more or more"
+      },
+      {
+        "index": 29,
+        "density": 0.05,
+        "quote": " on"
+      },
+      {
+        "index": 30,
+        "density": 0.1,
+        "quote": " you am,"
+      },
+      {
+        "index": 31,
+        "density": 0.1,
+        "quote": " before"
+      },
+      {
+        "index": 32,
+        "density": 0.15,
+        "quote": " using"
+      },
+      {
+        "index": 33,
+        "density": 0.15,
+        "quote": " anew,"
+      },
+      {
+        "index": 34,
+        "density": 0.15,
+        "quote": " quote not"
+      },
+      {
+        "index": 35,
+        "density": 0.1,
+        "quote": " on you"
+      },
+      {
+        "index": 36,
+        "density": 0.15,
+        "quote": " first,"
+      },
+      {
+        "index": 37,
+        "density": 0.2,
+        "quote": " size"
+      },
+      {
+        "index": 38,
+        "density": 0.1,
+        "quote": " is"
+      },
+      {
+        "index": 39,
+        "density": 0.2,
+        "quote": " check, quote"
+      },
+      {
+        "index": 40,
+        "density": 0.1,
+        "quote": " for you,"
+      },
+      {
+        "index": 41,
+        "density": 0.15,
+        "quote": " next"
+      },
+      {
+        "index": 42,
+        "density": 0.2,
+        "quote": " song being"
+      },
+      {
+        "index": 43,
+        "density": 0.15,
+        "quote": " read."
+      }
+    ]
+  },
+  "features": {
+    "visual_motion": [
+      0.03237364813685417,
+      0.05788001790642738,
+      0.0737003292888403,
+      0.06200086884200573,
+      0.08689477667212486,
+      0.06662808731198311,
+      0.0755738839507103,
+      0.05768229067325592,
+      0.06992669776082039,
+      0.06126784346997738,
+      0.07764998078346252,
+      0.06673900410532951,
+      0.07086709141731262,
+      0.05660445801913738,
+      0.07819010317325592,
+      0.06129436939954758,
+      0.08239293843507767,
+      0.06708863377571106,
+      0.07082127407193184,
+      0.057858312502503395,
+      0.10393277369439602,
+      0.06094714440405369,
+      0.0815393514931202,
+      0.06702353060245514,
+      0.08945312350988388,
+      0.05617766082286835,
+      0.0640986692160368,
+      0.0615234375,
+      0.07766203582286835,
+      0.06669560074806213,
+      0.07988763600587845,
+      0.05720968171954155,
+      0.0599512942135334,
+      0.06097125634551048,
+      0.08608217537403107,
+      0.0665171705186367,
+      0.08498505502939224,
+      0.05728684365749359,
+      0.05963541567325592,
+      0.0614703893661499,
+      0.09628906473517418,
+      0.0680362656712532,
+      0.08462094888091087,
+      0.05830198526382446,
+      0.07830584235489368,
+      0.06161024421453476,
+      0.07214265316724777,
+      0.06703076511621475,
+      0.0805121511220932,
+      0.05827546305954456,
+      0.06894048862159252,
+      0.0610339529812336
+    ],
+    "acoustic_flux": [
+      0.43969320410790447,
+      0.32507379761152355,
+      0.3808133322252099,
+      0.42594596306899113,
+      0.371006260892285,
+      0.4476892705645068,
+      0.49270591763134197,
+      0.3135584983150233,
+      0.3228340611985799,
+      0.4663850010950324,
+      0.5127794497689155,
+      0.40963569728688126,
+      0.47244350673790547,
+      0.49832800374255254,
+      0.5054119446817498,
+      0.3933522111877701,
+      0.40903674814405355,
+      0.37766165389461276,
+      0.4816758170277308,
+      0.5001026054672509,
+      0.36416463324777426,
+      0.28031768778894095,
+      0.4010035054677433,
+      0.44938160404703437,
+      0.39076410669726647,
+      0.4963266632239952,
+      0.5708964705936093,
+      0.41144773739845014,
+      0.3878136158092327,
+      0.33970093104684884,
+      0.3452592432820257,
+      0.45675388704198283,
+      0.3006538154723233,
+      0.3320923682712071,
+      0.5049644253624255,
+      0.31894797558777715,
+      0.6071884464276516,
+      0.5127439511400419,
+      0.6119577336656066,
+      0.5644683847050898,
+      0.20591345083060925,
+      0.5894947453472429,
+      0.35825968653975326,
+      0.4289416109561099,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "semantic_density": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.15,
+      0.15,
+      0.3,
+      0.3,
+      0.15,
+      0.0,
+      0.2,
+      0.1,
+      0.2,
+      0.15,
+      0.2,
+      0.1,
+      0.15,
+      0.1,
+      0.0,
+      0.25,
+      0.3,
+      0.15,
+      0.15,
+      0.1,
+      0.1,
+      0.15,
+      0.05,
+      0.05,
+      0.1,
+      0.05,
+      0.1,
+      0.1,
+      0.15,
+      0.15,
+      0.15,
+      0.1,
+      0.15,
+      0.2,
+      0.1,
+      0.2,
+      0.1,
+      0.15,
+      0.2,
+      0.15,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "extraction_protocol": {
+    "version": "av-transcript-heuristic-v1",
+    "frame_sampling_fps": 4,
+    "grayscale_size": [
+      96,
+      54
+    ],
+    "visual": "mean absolute pixel change / 40, clipped to [0,1]",
+    "audio": "positive spectral flux, L2-normalized spectra, 512 window / 256 hop at 16kHz, scale 1.5",
+    "semantic": "Codex ratings of timed ASR words only; does not include on-screen text or visual meaning"
+  },
+  "limitations": [
+    "Feature scales and CFI thresholds are experimental and have not been calibrated on real retention.",
+    "Camera motion, lighting, music and ASR errors can affect diagnostics.",
+    "CFI here is conditional on spoken-transcript evidence; silent visual storytelling needs a separate visual semantic extractor."
+  ],
+  "cfi": {
+    "mode": "uploaded_video_transcript_semantics",
+    "summary": {
+      "overall_grade": "F",
+      "grade_basis": "heuristic_pacing_only",
+      "predicted_completion_rate": null,
+      "prediction_status": "not_calibrated",
+      "pacing_score": 0.0022,
+      "hook_strength_3s": 0.0,
+      "boredom_valleys_count": 1,
+      "low_stimulus_fraction": 1.0,
+      "critical_drop_points": [],
+      "review_points": [
+        0.0
+      ],
+      "overload_fraction": 0.0,
+      "limitations": "Chỉ số nhịp dựng heuristic; chưa dự báo retention hoặc chứng minh quan hệ nhân quả."
+    },
+    "timeline_slices": [
+      {
+        "timestamp_sec": 0.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.03237364813685417,
+        "acoustic_flux": 0.43969320410790447,
+        "semantic_density": 0.1,
+        "boredom_penalty": 0.5603,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "HOOK",
+        "stimulus_load": 0.1907
+      },
+      {
+        "timestamp_sec": 0.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.05788001790642738,
+        "acoustic_flux": 0.32507379761152355,
+        "semantic_density": 0.1,
+        "boredom_penalty": 0.6749,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "HOOK",
+        "stimulus_load": 0.161
+      },
+      {
+        "timestamp_sec": 1.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.0737003292888403,
+        "acoustic_flux": 0.3808133322252099,
+        "semantic_density": 0.1,
+        "boredom_penalty": 0.6192,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "HOOK",
+        "stimulus_load": 0.1848
+      },
+      {
+        "timestamp_sec": 1.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.06200086884200573,
+        "acoustic_flux": 0.42594596306899113,
+        "semantic_density": 0.1,
+        "boredom_penalty": 0.5741,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "HOOK",
+        "stimulus_load": 0.196
+      },
+      {
+        "timestamp_sec": 2.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.08689477667212486,
+        "acoustic_flux": 0.371006260892285,
+        "semantic_density": 0.15,
+        "boredom_penalty": 0.629,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "HOOK",
+        "stimulus_load": 0.2026
+      },
+      {
+        "timestamp_sec": 2.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.06662808731198311,
+        "acoustic_flux": 0.4476892705645068,
+        "semantic_density": 0.15,
+        "boredom_penalty": 0.5523,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "HOOK",
+        "stimulus_load": 0.2214
+      },
+      {
+        "timestamp_sec": 3.0,
+        "cfi_score": 0.0013,
+        "visual_motion": 0.0755738839507103,
+        "acoustic_flux": 0.49270591763134197,
+        "semantic_density": 0.3,
+        "boredom_penalty": 0.5073,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.2894
+      },
+      {
+        "timestamp_sec": 3.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.05768229067325592,
+        "acoustic_flux": 0.3135584983150233,
+        "semantic_density": 0.3,
+        "boredom_penalty": 0.6864,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.2237
+      },
+      {
+        "timestamp_sec": 4.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.06992669776082039,
+        "acoustic_flux": 0.3228340611985799,
+        "semantic_density": 0.15,
+        "boredom_penalty": 0.6772,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.1809
+      },
+      {
+        "timestamp_sec": 4.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.06126784346997738,
+        "acoustic_flux": 0.4663850010950324,
+        "semantic_density": 0.0,
+        "boredom_penalty": 0.5336,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.1759
+      },
+      {
+        "timestamp_sec": 5.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.07764998078346252,
+        "acoustic_flux": 0.5127794497689155,
+        "semantic_density": 0.2,
+        "boredom_penalty": 0.4872,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.2635
+      },
+      {
+        "timestamp_sec": 5.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.06673900410532951,
+        "acoustic_flux": 0.40963569728688126,
+        "semantic_density": 0.1,
+        "boredom_penalty": 0.5904,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.1921
+      },
+      {
+        "timestamp_sec": 6.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.07086709141731262,
+        "acoustic_flux": 0.47244350673790547,
+        "semantic_density": 0.2,
+        "boredom_penalty": 0.5276,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.2478
+      },
+      {
+        "timestamp_sec": 6.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.05660445801913738,
+        "acoustic_flux": 0.49832800374255254,
+        "semantic_density": 0.15,
+        "boredom_penalty": 0.5017,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.235
+      },
+      {
+        "timestamp_sec": 7.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.07819010317325592,
+        "acoustic_flux": 0.5054119446817498,
+        "semantic_density": 0.2,
+        "boredom_penalty": 0.4946,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.2612
+      },
+      {
+        "timestamp_sec": 7.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.06129436939954758,
+        "acoustic_flux": 0.3933522111877701,
+        "semantic_density": 0.1,
+        "boredom_penalty": 0.6066,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.1849
+      },
+      {
+        "timestamp_sec": 8.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.08239293843507767,
+        "acoustic_flux": 0.40903674814405355,
+        "semantic_density": 0.15,
+        "boredom_penalty": 0.591,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.2138
+      },
+      {
+        "timestamp_sec": 8.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.06708863377571106,
+        "acoustic_flux": 0.37766165389461276,
+        "semantic_density": 0.1,
+        "boredom_penalty": 0.6223,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.1816
+      },
+      {
+        "timestamp_sec": 9.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.07082127407193184,
+        "acoustic_flux": 0.4816758170277308,
+        "semantic_density": 0.0,
+        "boredom_penalty": 0.5183,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.1842
+      },
+      {
+        "timestamp_sec": 9.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.057858312502503395,
+        "acoustic_flux": 0.5001026054672509,
+        "semantic_density": 0.25,
+        "boredom_penalty": 0.4999,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.2693
+      },
+      {
+        "timestamp_sec": 10.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.10393277369439602,
+        "acoustic_flux": 0.36416463324777426,
+        "semantic_density": 0.3,
+        "boredom_penalty": 0.6358,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.256
+      },
+      {
+        "timestamp_sec": 10.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.06094714440405369,
+        "acoustic_flux": 0.28031768778894095,
+        "semantic_density": 0.15,
+        "boredom_penalty": 0.7197,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.1638
+      },
+      {
+        "timestamp_sec": 11.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.0815393514931202,
+        "acoustic_flux": 0.4010035054677433,
+        "semantic_density": 0.15,
+        "boredom_penalty": 0.599,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.2108
+      },
+      {
+        "timestamp_sec": 11.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.06702353060245514,
+        "acoustic_flux": 0.44938160404703437,
+        "semantic_density": 0.1,
+        "boredom_penalty": 0.5506,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.2055
+      },
+      {
+        "timestamp_sec": 12.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.08945312350988388,
+        "acoustic_flux": 0.39076410669726647,
+        "semantic_density": 0.1,
+        "boredom_penalty": 0.6092,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.1934
+      },
+      {
+        "timestamp_sec": 12.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.05617766082286835,
+        "acoustic_flux": 0.4963266632239952,
+        "semantic_density": 0.15,
+        "boredom_penalty": 0.5037,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.2342
+      },
+      {
+        "timestamp_sec": 13.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.0640986692160368,
+        "acoustic_flux": 0.5708964705936093,
+        "semantic_density": 0.05,
+        "boredom_penalty": 0.4291,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.2283
+      },
+      {
+        "timestamp_sec": 13.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.0615234375,
+        "acoustic_flux": 0.41144773739845014,
+        "semantic_density": 0.05,
+        "boredom_penalty": 0.5886,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.1743
+      },
+      {
+        "timestamp_sec": 14.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.07766203582286835,
+        "acoustic_flux": 0.3878136158092327,
+        "semantic_density": 0.1,
+        "boredom_penalty": 0.6122,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.1885
+      },
+      {
+        "timestamp_sec": 14.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.06669560074806213,
+        "acoustic_flux": 0.33970093104684884,
+        "semantic_density": 0.05,
+        "boredom_penalty": 0.6603,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.1521
+      },
+      {
+        "timestamp_sec": 15.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.07988763600587845,
+        "acoustic_flux": 0.3452592432820257,
+        "semantic_density": 0.1,
+        "boredom_penalty": 0.6547,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.175
+      },
+      {
+        "timestamp_sec": 15.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.05720968171954155,
+        "acoustic_flux": 0.45675388704198283,
+        "semantic_density": 0.1,
+        "boredom_penalty": 0.5432,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.2047
+      },
+      {
+        "timestamp_sec": 16.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.0599512942135334,
+        "acoustic_flux": 0.3006538154723233,
+        "semantic_density": 0.15,
+        "boredom_penalty": 0.6993,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.1702
+      },
+      {
+        "timestamp_sec": 16.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.06097125634551048,
+        "acoustic_flux": 0.3320923682712071,
+        "semantic_density": 0.15,
+        "boredom_penalty": 0.6679,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.181
+      },
+      {
+        "timestamp_sec": 17.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.08608217537403107,
+        "acoustic_flux": 0.5049644253624255,
+        "semantic_density": 0.15,
+        "boredom_penalty": 0.495,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.247
+      },
+      {
+        "timestamp_sec": 17.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.0665171705186367,
+        "acoustic_flux": 0.31894797558777715,
+        "semantic_density": 0.1,
+        "boredom_penalty": 0.6811,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.1618
+      },
+      {
+        "timestamp_sec": 18.0,
+        "cfi_score": 0.0364,
+        "visual_motion": 0.08498505502939224,
+        "acoustic_flux": 0.6071884464276516,
+        "semantic_density": 0.15,
+        "boredom_penalty": 0.3928,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.2807
+      },
+      {
+        "timestamp_sec": 18.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.05728684365749359,
+        "acoustic_flux": 0.5127439511400419,
+        "semantic_density": 0.2,
+        "boredom_penalty": 0.4873,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.2567
+      },
+      {
+        "timestamp_sec": 19.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.05963541567325592,
+        "acoustic_flux": 0.6119577336656066,
+        "semantic_density": 0.1,
+        "boredom_penalty": 0.388,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.2572
+      },
+      {
+        "timestamp_sec": 19.5,
+        "cfi_score": 0.0622,
+        "visual_motion": 0.0614703893661499,
+        "acoustic_flux": 0.5644683847050898,
+        "semantic_density": 0.2,
+        "boredom_penalty": 0.4355,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.2753
+      },
+      {
+        "timestamp_sec": 20.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.09628906473517418,
+        "acoustic_flux": 0.20591345083060925,
+        "semantic_density": 0.1,
+        "boredom_penalty": 0.7941,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.1341
+      },
+      {
+        "timestamp_sec": 20.5,
+        "cfi_score": 0.0166,
+        "visual_motion": 0.0680362656712532,
+        "acoustic_flux": 0.5894947453472429,
+        "semantic_density": 0.15,
+        "boredom_penalty": 0.4105,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.2692
+      },
+      {
+        "timestamp_sec": 21.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.08462094888091087,
+        "acoustic_flux": 0.35825968653975326,
+        "semantic_density": 0.2,
+        "boredom_penalty": 0.6417,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.2143
+      },
+      {
+        "timestamp_sec": 21.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.05830198526382446,
+        "acoustic_flux": 0.4289416109561099,
+        "semantic_density": 0.15,
+        "boredom_penalty": 0.5711,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.2124
+      },
+      {
+        "timestamp_sec": 22.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.07830584235489368,
+        "acoustic_flux": 0.0,
+        "semantic_density": 0.0,
+        "boredom_penalty": 0.9217,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.0261
+      },
+      {
+        "timestamp_sec": 22.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.06161024421453476,
+        "acoustic_flux": 0.0,
+        "semantic_density": 0.0,
+        "boredom_penalty": 0.9384,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.0205
+      },
+      {
+        "timestamp_sec": 23.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.07214265316724777,
+        "acoustic_flux": 0.0,
+        "semantic_density": 0.0,
+        "boredom_penalty": 0.9279,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.024
+      },
+      {
+        "timestamp_sec": 23.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.06703076511621475,
+        "acoustic_flux": 0.0,
+        "semantic_density": 0.0,
+        "boredom_penalty": 0.933,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.0223
+      },
+      {
+        "timestamp_sec": 24.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.0805121511220932,
+        "acoustic_flux": 0.0,
+        "semantic_density": 0.0,
+        "boredom_penalty": 0.9195,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.0268
+      },
+      {
+        "timestamp_sec": 24.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.05827546305954456,
+        "acoustic_flux": 0.0,
+        "semantic_density": 0.0,
+        "boredom_penalty": 0.9417,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.0194
+      },
+      {
+        "timestamp_sec": 25.0,
+        "cfi_score": 0.0,
+        "visual_motion": 0.06894048862159252,
+        "acoustic_flux": 0.0,
+        "semantic_density": 0.0,
+        "boredom_penalty": 0.9311,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.023
+      },
+      {
+        "timestamp_sec": 25.5,
+        "cfi_score": 0.0,
+        "visual_motion": 0.0610339529812336,
+        "acoustic_flux": 0.0,
+        "semantic_density": 0.0,
+        "boredom_penalty": 0.939,
+        "zone": "BOREDOM_VALLEY",
+        "recommendation": "Ít biến thiên: xem lại nội dung và nhịp dựng; chưa kết luận người xem sẽ rời đi.",
+        "stage": "BODY",
+        "stimulus_load": 0.0203
+      }
+    ]
+  }
+}
