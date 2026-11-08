@@ -15,3 +15,5 @@ Cài phiên bản mới thay ứng dụng nhưng dữ liệu/config nằm trong 
 Dự án công khai mã nguồn để đọc/nghiên cứu; quyền sử dụng/phân phối còn theo giấy phép từng thành phần. Chưa tự gán giấy phép thương mại cho toàn bộ dependency. Xem DESKTOP_NOTICES.txt trước phân phối rộng.
 
 Lần phát hành thử nghiệm đầu 0.3.1 có các lần retry build từ main để sửa tương thích Windows. Xem commit build trong release-validation JSON và log Actions để lấy đúng source tương ứng bộ cài; tag 0.3.1 ghi nhận mốc bắt đầu phát hành. Các phiên bản tiếp theo cần bump version và tạo tag mới sau khi hoàn tất sửa code, tránh thay binary cùng version.
+
+Khi chạy Run workflow thủ công, mặc định chỉ build/kiểm thử và lưu Actions artifacts, không ghi đè Release. Chỉ chọn `publish` khi muốn upload bộ cài vào Release hiện có. Workflow chạy từ tag mới vẫn phát hành như trước. Các action checkout/setup/upload đã nâng lên runtime Node.js 24; Node build ứng dụng vẫn là 22.
