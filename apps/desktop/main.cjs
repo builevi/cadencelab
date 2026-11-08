@@ -35,6 +35,7 @@ async function startBackend(){
   // Never inherit a project API key into the distributed backend.
   for(const name of ['OPENAI_API_KEY','GITHUB_MODELS_TOKEN','GEMINI_API_KEY','DEEPSEEK_API_KEY','GROQ_API_KEY'])delete env[name];
   child=spawn(backend,[],{cwd:data,env,stdio:['ignore','pipe','pipe'],windowsHide:true});
+  if(process.env.CADENCELAB_SMOKE)child.stderr.on('data',chunk=>fs.appendFile(path.join(app.getPath('userData'),'backend-smoke.log'),chunk).catch(()=>{}));
   const port=await new Promise((resolve,reject)=>{
     const timer=setTimeout(()=>reject(new Error('Backend khởi động quá lâu.')),60000);
     child.once('error',()=>{clearTimeout(timer);reject(new Error('Không khởi động được backend đã đóng gói.'));});
@@ -51,8 +52,11 @@ async function startBackend(){
   }
   throw new Error('Backend chưa sẵn sàng.');
 }
+async function smokeStage(stage){if(process.env.CADENCELAB_SMOKE)await fs.appendFile(path.join(app.getPath('userData'),'desktop-smoke.log'),stage+'\n');}
 async function boot(){
+  await smokeStage('starting backend');
   await startBackend();
+  await smokeStage('backend ready');
   store=new SettingsStore(app.getPath('userData'),safeStorage);
   await callBackend('/internal/provider',await store.current(),'PUT');
   ipcMain.handle('settings:get',async(event,provider)=>{validateSender(event);return store.metadata(provider);});
@@ -79,7 +83,9 @@ async function boot(){
     {label:'Chỉnh sửa',submenu:[{role:'undo'},{role:'redo'},{type:'separator'},{role:'cut'},{role:'copy'},{role:'paste'},{role:'selectAll'}]},
     {label:'Hiển thị',submenu:[{role:'reload'},{role:'resetZoom'},{role:'zoomIn'},{role:'zoomOut'},{role:'togglefullscreen'}]}
   ]));
+  await smokeStage('loading window');
   await window.loadURL(origin);
+  await smokeStage('window loaded');
   if(process.env.CADENCELAB_SMOKE){
     const result={packaged:app.isPackaged,version:app.getVersion(),backendReady:true,uiTitle:await window.webContents.getTitle(),
       settings:(await store.metadata()).provider};
@@ -87,6 +93,12 @@ async function boot(){
     app.quit();
   }
 }
-app.whenReady().then(boot).catch(error=>{dialog.showErrorBox('CadenceLab chưa mở được',error.message||'Lỗi khởi động.');app.quit();});
+app.whenReady().then(boot).catch(async error=>{
+  if(process.env.CADENCELAB_SMOKE){
+    await fs.writeFile(path.join(app.getPath('userData'),'smoke-error.json'),JSON.stringify({error:error.message}));
+    if(child&&!child.killed)child.kill();app.exit(1);return;
+  }
+  dialog.showErrorBox('CadenceLab chưa mở được',error.message||'Lỗi khởi động.');app.quit();
+});
 app.on('window-all-closed',()=>app.quit());
 app.on('before-quit',()=>{quitting=true;if(child&&!child.killed)child.kill();});
