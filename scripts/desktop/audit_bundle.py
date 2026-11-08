@@ -17,6 +17,8 @@ forbidden=[];found=[];files=0
 for path in app.rglob('*'):
     if path.is_symlink() or not path.is_file():continue
     files+=1
+    if path.suffix in ['.zip','.gz','.tar']:
+        raise SystemExit('Distribution audit failed: unexpected nested archive')
     if path.name in ['.env','.env.local','auth.json','ai-settings.json','jobs.sqlite3'] or path.suffix in ['.sqlite3','.db']:forbidden.append(str(path.relative_to(app)))
     if secrets:
         overlap=max(map(len,secrets))-1

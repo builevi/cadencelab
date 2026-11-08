@@ -10,7 +10,8 @@ if stage.exists():shutil.rmtree(stage)
 stage.mkdir(parents=True)
 for name in ['package.json','package-lock.json','next.config.mjs','tsconfig.json','next-env.d.ts']:
     shutil.copy2(web/name,stage/name)
-for name in ['src','public']:shutil.copytree(web/name,stage/name)
+for name in ['src','public']:
+    shutil.copytree(web/name,stage/name,ignore=shutil.ignore_patterns('downloads') if name=='public' else None)
 if os.name=='nt':
     subprocess.run(['cmd','/c','mklink','/J',str(stage/'node_modules'),str(web/'node_modules')],check=True)
 else:(stage/'node_modules').symlink_to(web/'node_modules',target_is_directory=True)
