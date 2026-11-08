@@ -1,0 +1,16 @@
+[
+  {
+    "job": 128733860091,
+    "ui_ready": true,
+    "packaged": true,
+    "backend_ready": true,
+    "version": "0.3.1"
+  },
+  {
+    "job": 128733860222,
+    "ui_ready": true,
+    "packaged": true,
+    "backend_ready": true,
+    "version": "0.3.1"
+  }
+]

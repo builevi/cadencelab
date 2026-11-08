@@ -1,0 +1,20 @@
+{
+  "version": "v0.3.1",
+  "workflow_url": "https://github.com/builevi/cadencelab/actions/runs/42481380533",
+  "source_build_commit": "28aed016a686a90ff972ecb440da949bcab760d4",
+  "workflow_conclusion": "success",
+  "assets": [
+    {
+      "name": "CadenceLab-0.3.1-mac-arm64.dmg",
+      "bytes": 307506079,
+      "sha256": "sha256:f653edaa53b4898cd5a6af8f9ff3060ceba511a1e8663561714ef328c894e87f",
+      "url": "https://github.com/builevi/cadencelab/releases/download/v0.3.1/CadenceLab-0.3.1-mac-arm64.dmg"
+    },
+    {
+      "name": "CadenceLab-0.3.1-win-x64.exe",
+      "bytes": 325216583,
+      "sha256": "sha256:a82821e2911a4a7ddeb166fca79df40665365dbb51032016ad241b6169f9e1f2",
+      "url": "https://github.com/builevi/cadencelab/releases/download/v0.3.1/CadenceLab-0.3.1-win-x64.exe"
+    }
+  ]
+}

@@ -9,8 +9,8 @@ with tempfile.TemporaryDirectory(prefix='cadencelab-app-smoke-') as directory:
  finally:
   for name in ['desktop-smoke.log','smoke-error.json','backend-smoke.log']:
    log=Path(directory)/name
-   if log.exists():print(log.read_text(errors='replace')[-16000:])
+   if log.exists():print(log.read_text(encoding='utf-8',errors='replace')[-16000:].encode('ascii',errors='backslashreplace').decode('ascii'))
  assert result.returncode==0,'Packaged app failed'
- proof=json.loads((Path(directory)/'smoke-result.json').read_text())
+ proof=json.loads((Path(directory)/'smoke-result.json').read_text(encoding='utf-8'))
  assert proof['uiReady'] and proof['packaged'] and proof['backendReady'] and 'CadenceLab' in proof['uiTitle']
  print(json.dumps(proof))

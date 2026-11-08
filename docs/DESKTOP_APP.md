@@ -2,9 +2,9 @@
 
 ## Bản đã tạo
 
-`release/CadenceLab-0.3.1-mac-arm64.dmg` là bộ cài **Mac Apple Silicon** (M1 trở lên), khoảng 416 MiB. Mở DMG và kéo CadenceLab vào Applications. App tự chạy backend riêng và mở giao diện trong cửa sổ native; người dùng không cần cài Python, Node hoặc mở Terminal để khởi động.
+`release/CadenceLab-0.3.1-mac-arm64.dmg` là bộ cài **Mac Apple Silicon** (M1 trở lên), khoảng 300 MB (xem kích thước thực trên Releases). Mở DMG và kéo CadenceLab vào Applications. App tự chạy backend riêng và mở giao diện trong cửa sổ native; người dùng không cần cài Python, Node hoặc mở Terminal để khởi động.
 
-Đây là bản kiểm thử nội bộ, ký ad-hoc. Chưa có Apple Developer ID/notarization nên macOS có thể chặn bản được tải qua Internet. Chưa xác nhận khả năng cài trên một máy Mac sạch. Không tắt Gatekeeper để phát hành. Bản Intel và Windows chưa được tạo/kiểm thử; cấu hình NSIS trong mã nguồn chưa phải file `.exe` dùng được.
+Đây là bản kiểm thử nội bộ, ký ad-hoc. Chưa có Apple Developer ID/notarization nên macOS có thể chặn bản được tải qua Internet. Chưa xác nhận khả năng cài trên một máy Mac sạch. Không tắt Gatekeeper để phát hành. Bản Intel chưa được tạo. Windows x64 được build bằng NSIS và kiểm tra khởi động/giao diện trên GitHub runner Windows; chưa xác nhận cài đặt trên máy Windows của khách. Xem asset EXE thực tế trên Releases.
 
 ## Cài đặt AI
 
@@ -32,6 +32,7 @@ Chạy từ thư mục gốc, Python 3.12+ và Node phù hợp với lockfile:
 uv sync --locked --extra media --group dev --group build
 npm --prefix apps/web ci
 npm --prefix apps/desktop ci
+node apps/desktop/node_modules/electron/install.js
 uv run --extra media python scripts/prepare_video_models.py
 uv run --extra media python scripts/desktop/build_frontend.py
 uv run --extra media --group build python scripts/desktop/build_backend.py
@@ -53,7 +54,7 @@ Trước phát hành công khai cần ký Developer ID, notarize/staple bản Ma
 
 ## Kiểm chứng lần build này
 
-- 89 kiểm thử Python; 5 kiểm thử Node cho cài đặt/mã hóa; build TypeScript và xuất frontend thành công.
+- 89 kiểm thử Python; 7 kiểm thử Node cho cài đặt/mã hóa; build TypeScript và xuất frontend thành công.
 - Backend đã đóng băng chạy độc lập: chặn truy cập không có token, phục vụ frontend, tạo job báo cáo, xử lý video thật với FFmpeg/ASR. Bài thử nhận dạng 58 từ và 52 lát cắt; cố ý ngắt AI và xác nhận không dựng điểm ngữ nghĩa.
 - Mở app đã đóng gói, backend riêng hoạt động, frontend tải thành công. Bấm Kiểm tra kết nối trong cửa sổ native đã nhận JSON hợp lệ từ Codex đã đăng nhập; lưu cấu hình Codex thành công.
 - Adapter cloud được kiểm bằng transport giả; chưa thử key cloud thật hay lưu key thật vào Keychain. Chưa xác nhận mọi model của các nhà cung cấp đều tương thích.
