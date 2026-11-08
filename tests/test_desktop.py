@@ -39,7 +39,7 @@ class CompatibleTests(unittest.TestCase):
 class DesktopBoundaryTests(unittest.TestCase):
     def setUp(self):
         self.temp=tempfile.TemporaryDirectory();root=Path(self.temp.name)
-        (root/'index.html').write_text('<html><script>console.log("fixture")</script><body>Desktop fixture</body></html>')
+        (root/'index.html').write_text('<html><script>console.log("fixture")</script><body>Cài đặt AI · Đọc video</body></html>',encoding='utf-8')
         self.env=patch.dict('os.environ',{'SOCIALLENS_JOB_DB':str(root/'data/jobs.db')});self.env.start()
         self.runtime=patch('apps.api.services.compatible._runtime',None);self.runtime.start()
         self.app=create_desktop_app(root,'x'*64,'fixture-instance')

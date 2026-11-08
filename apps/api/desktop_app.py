@@ -32,7 +32,7 @@ class ConnectionTest(Model):ok:bool
 
 def create_desktop_app(frontend,token,instance='desktop'):
     if len(token)<32:raise ValueError('Desktop token must be unpredictable')
-    html=(Path(frontend)/'index.html').read_text()
+    html=(Path(frontend)/'index.html').read_text(encoding='utf-8')
     hashes=["'sha256-"+__import__('base64').b64encode(hashlib.sha256(code.encode()).digest()).decode()+"'"
             for code in re.findall(r'<script[^>]*>(.*?)</script>',html,re.S)]
     csp="default-src 'self'; script-src 'self' "+' '.join(hashes)+"; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; media-src 'self' blob:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"

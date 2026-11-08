@@ -87,7 +87,13 @@ async function boot(){
   await window.loadURL(origin);
   await smokeStage('window loaded');
   if(process.env.CADENCELAB_SMOKE){
-    const result={packaged:app.isPackaged,version:app.getVersion(),backendReady:true,uiTitle:await window.webContents.getTitle(),
+    let uiReady=false;
+    for(let tries=0;tries<100;tries++){
+      uiReady=await window.webContents.executeJavaScript("!!window.cadenceDesktop && [...document.querySelectorAll('button')].some(b=>b.textContent.includes('Cài đặt AI'))");
+      if(uiReady)break;await new Promise(resolve=>setTimeout(resolve,100));
+    }
+    if(!uiReady)throw new Error('Desktop UI did not hydrate');
+    const result={uiReady,packaged:app.isPackaged,version:app.getVersion(),backendReady:true,uiTitle:await window.webContents.getTitle(),
       settings:(await store.metadata()).provider};
     await fs.writeFile(path.join(app.getPath('userData'),'smoke-result.json'),JSON.stringify(result));
     app.quit();

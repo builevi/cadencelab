@@ -37,7 +37,7 @@ class AppServerClient:
         command += ['-c','web_search="disabled"']
         config_path=Path.home()/'.codex/config.toml'
         try:
-            config=tomllib.loads(config_path.read_text()) if config_path.is_file() else {}
+            config=tomllib.loads(config_path.read_text(encoding='utf-8')) if config_path.is_file() else {}
         except (OSError,ValueError):
             raise ProviderError('codex_config_unreadable') from None
         for name in config.get('mcp_servers',{}):

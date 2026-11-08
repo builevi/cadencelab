@@ -12,5 +12,5 @@ with tempfile.TemporaryDirectory(prefix='cadencelab-app-smoke-') as directory:
    if log.exists():print(log.read_text(errors='replace')[-16000:])
  assert result.returncode==0,'Packaged app failed'
  proof=json.loads((Path(directory)/'smoke-result.json').read_text())
- assert proof['packaged'] and proof['backendReady'] and 'CadenceLab' in proof['uiTitle']
+ assert proof['uiReady'] and proof['packaged'] and proof['backendReady'] and 'CadenceLab' in proof['uiTitle']
  print(json.dumps(proof))

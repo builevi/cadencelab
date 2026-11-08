@@ -61,7 +61,7 @@ class GitHubModels:
         values = {}
         path = Path(__file__).resolve().parents[3] / '.env.local'
         if path.is_file():
-            for line in path.read_text().splitlines():
+            for line in path.read_text(encoding='utf-8').splitlines():
                 if '=' in line and not line.lstrip().startswith('#'):
                     key,value = line.split('=',1)
                     values[key.strip()] = value.strip().strip('\"\'')
