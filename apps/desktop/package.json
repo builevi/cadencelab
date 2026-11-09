@@ -50,6 +50,10 @@
       {
         "from": "../../docs/DESKTOP_NOTICES.txt",
         "to": "DESKTOP_NOTICES.txt"
+      },
+      {
+        "from": "../../LICENSE",
+        "to": "LICENSE"
       }
     ],
     "mac": {
@@ -90,5 +94,6 @@
     },
     "artifactName": "CadenceLab-${version}-${os}-${arch}.${ext}",
     "electronDist": "node_modules/electron/dist"
-  }
+  },
+  "license": "MIT"
 }
