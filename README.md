@@ -165,3 +165,13 @@ Local AI workflow is now available through the logged-in Codex app-server: [setu
 Uploaded video analysis: [setup, supported files, methods and verified limits](docs/VIDEO_PIPELINE.md). The UI now accepts MP4/MOV/WebM files; spoken content uses local ASR and Codex. Visual semantics/OCR and automatic downloads from social links remain pending.
 
 Link submission and measured report timer: [source-bound jobs, real-result viewer and live collection limitations](docs/SOURCE_REPORTS_2026-11-08.md). Enter no longer substitutes the LumiDerm sample when a supplied link cannot be read.
+
+## Giấy phép
+
+Mã nguồn gốc của CadenceLab được phát hành theo [MIT License](LICENSE),
+Copyright (c) 2026 builevi. Có thể sử dụng thương mại, sửa đổi và phân phối
+với điều kiện giữ thông báo bản quyền và giấy phép.
+
+Các thư viện, model, font, runtime và binary bên thứ ba giữ giấy phép riêng;
+MIT của dự án không thay thế những điều khoản đó. Xem
+[thông tin thành phần Desktop](docs/DESKTOP_NOTICES.txt).
