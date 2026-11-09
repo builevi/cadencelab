@@ -2,6 +2,8 @@
 name = "sociallens-pro"
 version = "0.2.0"
 description = "Experimental social content diagnostics and conditional trend modeling"
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.12"
 dependencies = [
   "numpy>=2.0,<3",
