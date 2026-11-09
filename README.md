@@ -1,177 +1,89 @@
 # CadenceLab
 
-**Chẩn đoán nội dung mạng xã hội có dẫn chứng — bản Web tự host và ứng dụng Desktop.**
+**Evidence-based video and social content analysis for creators, agencies, and marketing teams.**
 
-CadenceLab giúp người làm nội dung tìm đoạn video cần chỉnh nhịp, đối chiếu hiệu quả bài đăng với nhóm tương đồng và tạo hồ sơ chiến lược có trích dẫn kiểm tra được. Mục tiêu là biến dữ liệu đầu vào thành quyết định biên tập có thể kiểm chứng, không hứa đoán chính xác video viral hay khẳng định shadowban.
+CadenceLab helps you review short-form videos, compare post performance with relevant peers, and turn supplied content data into reports with traceable references. It brings video pacing diagnostics and content research into one workspace, with a desktop application for local processing and a web interface under development.
 
-## Hai cách sử dụng
+**Status: early preview.** Desktop **v0.3.1** is available for testing on macOS Apple Silicon and Windows x64. The product is still being validated; its scores are editing and research aids, with no demonstrated predictive accuracy for audience retention or virality.
 
-- **Desktop (macOS / Windows)**: tải bộ cài đúng hệ điều hành từ [GitHub Releases](https://github.com/builevi/cadencelab/releases). Dữ liệu lưu trên máy, tự cấu hình AI trong Cài đặt. Mục Cập nhật phần mềm kiểm tra bản mới trên Releases. Chỉ các nền tảng có asset thực tế mới tải được.
-- **Web tự host**: Next.js frontend + FastAPI backend. Cloudflare Tunnel trỏ về laptop chỉ hoạt động khi laptop/server đó đang chạy. Đưa source lên GitHub không thay thế hosting backend. Xem [triển khai Web](docs/WEB_HOSTING.md).
+[Download Desktop](https://github.com/builevi/cadencelab/releases/latest) · [Report an issue](https://github.com/builevi/cadencelab/issues) · [MIT License](LICENSE)
 
-## Điểm khác biệt trong cách xử lý
+## What you can do
 
-Đây là các lựa chọn kỹ thuật của dự án, không phải tuyên bố mọi SaaS khác đều thiếu hoặc thuật toán đã được chứng minh tốt hơn đối thủ.
+- **Review short-form video pacing.** Upload a video to examine motion, audio changes, and transcript-based information density along a timeline. Use flagged moments to guide an editorial review.
+- **Compare content against relevant peers.** Analyze supplied post data using comparable cohorts. The post being evaluated is excluded from its own performance baseline.
+- **Build reports with traceable references.** AI-assisted interpretations include quotations checked against supplied text. Missing evidence stays visible; quotation matching does not guarantee that an interpretation is correct.
+- **Explore content questions and trend scenarios.** Experimental workspaces support semantic retrieval over supplied content and conditional trend modeling. These require suitable input data and manual review.
 
-| Thành phần | Cách làm | Giá trị và giới hạn |
+Designed for people who need to explain *what to review and what evidence supports it*: independent creators, editors, small agencies, and in-house content teams.
+
+## Download and get started
+
+Choose the installer for your computer from the [latest release](https://github.com/builevi/cadencelab/releases/latest):
+
+| Platform | Available installer | Release status |
 |---|---|---|
-| CFI từng 0.5 giây | Kết hợp chuyển động, biến thiên âm thanh và mật độ thông tin lời nói; xét đoạn hook riêng | Chỉ mốc cần xem lại, không suy ra tỷ lệ giữ chân thực tế |
-| Cohort Leave-One-Out | Loại bài đang xét khỏi baseline, so bài cùng định dạng và tuổi | Giảm việc một bài tự nâng mốc so sánh; thiếu cohort thì báo thiếu |
-| SEIR-F | RK4 bảo toàn dân số, fitting robust trên chuỗi daily active spreaders | Kịch bản có điều kiện, không đổi view thành người lan truyền hoặc xác suất viral |
-| Khoảng trống nội dung | Cosine retrieval có nguồn cho nhu cầu, ngưỡng phủ 0.80 | Heuristic xếp ưu tiên trong corpus đã nhập, không tự dựng nhu cầu |
-| Báo cáo AI | Schema chặt, kiểm tra quote khớp bài nguồn | Không cho văn bản AI tự trở thành bằng chứng |
-| Dữ liệu thiếu | Giữ missing, kiểm tra đầu vào và trả lỗi rõ | Không thay link lỗi bằng báo cáo demo |
+| macOS — Apple Silicon (M1 or newer) | `.dmg` | Preview; ad-hoc signed, not Apple-notarized |
+| Windows — x64 | `.exe` | Preview; not code-signed |
 
-[Hướng dẫn Desktop](docs/DESKTOP_APP.md) · [Phát hành và cập nhật](docs/RELEASING.md) · [Kế hoạch](docs/PLAN.md)
+Intel Mac and Linux installers are not currently available. Startup and interface checks have passed on macOS and Windows CI runners; installation on clean customer devices has not yet been comprehensively validated. Your operating system may display a security warning for these preview builds.
 
-## Chạy từ mã nguồn
+1. Install and open CadenceLab. Desktop bundles its application runtime, video tools, and speech model; normal use does not require Python or Node.js.
+2. Open **AI Settings** (currently labeled **Cài đặt AI**), select a provider, configure the model and credentials where required, then test and save the connection.
+3. Upload a supported video or supply content data. Review the transcript, source references, and missing-data notices alongside the results. Some workspaces include explicitly labeled examples.
 
-```sh
-git clone https://github.com/builevi/cadencelab.git
-cd cadencelab
-uv sync --locked --extra media --group dev
-uv run --extra media python scripts/prepare_video_models.py
-uv run --extra media uvicorn apps.api.main:app --host 127.0.0.1 --port 8000
-```
+Current video limit: **60 seconds and 25 MiB per file**. The interface is currently primarily in Vietnamese; English localization is planned. This README is the English introduction to the project, rather than a claim that the application is already fully localized.
 
-Terminal khác:
+## Desktop and web availability
 
-```sh
-npm --prefix apps/web ci
-npm --prefix apps/web run build
-npm --prefix apps/web start
-```
+**Desktop** is the downloadable preview available today. It runs analysis services on your computer and stores reports and settings locally. The **Software Updates** section checks GitHub Releases and links to a newer installer when available; updates are installed manually.
 
-Mở http://localhost:3000. Không commit `.env.local`, API key, database báo cáo hay tài khoản Codex. Phần Google đăng nhập trên frontend hiện tại chưa thay thế xác thực và phân quyền API trên server; không triển khai multi-tenant công khai trước khi hoàn thiện lớp này.
+**Web** is an experimental browser interface. The current deployment depends on a developer-operated origin and may be unavailable when that machine is offline. It is not yet an independently hosted, always-on service. Shared account security, tenant isolation, and operational controls need further work before a public multi-user SaaS launch. For the available preview, use the Desktop downloads above.
 
-## Tình trạng
+## AI and data handling
 
-Bản thử nghiệm. Video file tối đa 60 giây / 25 MiB; ASR và tín hiệu local; chưa OCR/hiểu ngữ nghĩa hình ảnh. Thu thập TikTok công khai có thể bị nền tảng chặn. Codex local cần cài CLI và đăng nhập riêng, vẫn cần Internet; Ollama cần cài dịch vụ/model trước. Các nhà cung cấp cloud cần key/hạn mức riêng. Chưa đo predictive accuracy trên kết quả khán giả ngoài thực tế. Bộ cài hiện chưa có chứng thực phát hành của Apple/Microsoft.
+Desktop supports configurable adapters for OpenAI, Gemini, DeepSeek, Groq, an existing Codex CLI login, and a local Ollama service. Provider and model compatibility varies; you need your own access and any required quota. Codex and Ollama are separate installations.
 
-## Chi tiết kỹ thuật và hợp đồng API
+Video decoding, signal extraction, and speech transcription run locally. Selecting a cloud AI provider sends the relevant analysis input to that provider. A Codex CLI login also requires online access; it does not make AI processing offline. Ollama can support local AI analysis when the service and a suitable model are already installed. Collecting data from social links still requires internet access.
 
-Experimental content diagnostics and conditional trend modeling. The engines do
-not yet have validated predictive accuracy on real audience outcomes.
+Desktop API keys use the operating system's encrypted storage mechanism. The preview does not include a shared AI subscription or bundled credentials.
 
-## Run
+## How the analysis works
 
-Requires Python 3.12+ and uv. Run from the repository root:
-
-```sh
-uv sync --locked --extra media --group dev
-uv run uvicorn apps.api.main:app --reload --port 8000
-```
-
-Open [interactive API docs](http://localhost:8000/docs). Running
-`uv run --project ../.. uvicorn main:app --reload --port 8000` from `apps/api`
-is also supported.
-
-```sh
-uv run python -m unittest discover -s tests -v
-uv run python docs/research/check_algorithms.py
-```
-
-## Implemented engines
-
-- `packages/algo_core/cfi.py`: normalized video-feature pacing diagnostics,
-  derivatives per second, independent hook/risk labels. No predicted completion
-  percentage until an outcome model has been trained and calibrated.
-- `packages/algo_core/seir_f.py`: population-conserving SEIR-F scenarios and
-  conditional fitting to consecutive daily **active-spreader** counts. Fitting
-  beta and initial exposure holds the other parameters fixed; uncertainty and
-  real-world accuracy remain uncalibrated.
-- `packages/algo_core/content_gaps.py`: cosine retrieval against the supplied
-  corpus, ranked using documented demand evidence. This is semantic gap ranking,
-  not persistent homology. Evidence URLs are retained, not fetched or verified.
-- `packages/algo-core/`: legacy path shims; new code imports `packages.algo_core`.
-
-## API contracts
-
-| POST endpoint | Input | Output |
+| Component | Approach | Current interpretation |
 |---|---|---|
-| `/api/v1/cfi/analyze` | JSON: `visual_motion`, `acoustic_flux`, `semantic_density`, optional `time_step` | Pacing diagnostics; no retention forecast |
-| `/api/v1/cfi/simulate?video_seconds=15` | Query parameter | Explicitly labeled synthetic demo |
-| `/api/v1/trend/forecast` | JSON: `trend_keyword`, `daily_active_spreaders`, optional `days`, `population_size` | Conditional fitted scenario and in-sample fit diagnostics |
-| `/api/v1/trend/simulate?days=21` | Query parameter | Explicit scenario with default assumptions |
-| `/api/v1/whitespaces/discover` | JSON: `embeddings`, `cluster_labels`, `embedding_model`, `unanswered_queries` | Evidence-backed semantic candidates within the supplied corpus |
+| Video pacing (CFI) | Combines normalized motion, audio-change, and transcript signals over time | A heuristic review aid; no calibrated retention or completion-rate prediction |
+| Peer comparison | Leave-one-out comparisons within suitable content cohorts | Relative performance within the supplied sample; insufficient cohorts are reported |
+| Trend modeling (SEIR-F) | Fits a population-based diffusion scenario to daily active-spreader observations | Experimental conditional scenarios; views and likes cannot substitute for active-spreader counts |
+| Content-gap research | Compares question and content embeddings within a supplied corpus | Retrieval candidates for manual answer review; similarity alone does not establish unmet market demand |
+| AI reports | Structured responses and exact-quotation checks against supplied text | Traceable supporting text, with human review still required |
 
-CFI features must be finite in [0,1], same length, and extracted with consistent
-normalization across videos. One slice is supported. `time_step` is in seconds;
-0–3 seconds (excluding 3) are tagged HOOK, independently of diagnostic zone.
-`BOREDOM_VALLEY` is a legacy name for **low measured stimulus**, not observed boredom.
+These are implementation choices, not a claim of proven superiority over other analytics products.
 
-Trend input requires 7–365 consecutive observations of daily active spreaders,
-starting above zero. This is not cumulative views or daily view counts. `day=1`
-means one day after the last observation (or scenario initial state). All priors
-and initial-state assumptions are returned. A keyword labels the supplied series;
-it does not trigger collection. The API caps future forecasts at 90 days.
-`active_virality` is active spreaders / fixed population; `audience_fatigue` is
-accumulated active-spreader-days / population, not a probability or measured psychology.
+## Current limitations and development status
 
-Each demand query contains `query`, `embedding`, positive integer `demand_count`,
-and 1–20 `source_urls`. Query and corpus vectors must use the same model/version.
-Repeated identical normalized questions use the maximum count, not a sum, to avoid
-inflating demand; caller must deduplicate users across different questions.
-Questions with nearest cosine similarity >= 0.8 are treated as covered by this
-retrieval heuristic. Other candidates score:
+- **Video understanding:** speech and signal analysis are implemented. OCR and full visual-semantic understanding are not yet implemented. Silent visual storytelling can be underrepresented.
+- **Social links:** public-source collection is best effort. TikTok and other platforms may restrict access; a URL alone does not provide private retention or account analytics. Supplied files and authorized data are the more dependable inputs.
+- **Prediction:** no independent real-world benchmark currently establishes forecasting accuracy, retention improvement, or return on investment.
+- **Research workspaces:** some screens use demonstration inputs. Content-gap research does not yet provide a complete verified demand-collection and embedding-generation pipeline.
+- **Release versus ongoing work:** v0.3.1 is the downloadable baseline. Additional algorithm safeguards have been implemented and tested in the development workspace, including pacing corrections, forecast quality checks, and unverified-demand handling. They have not yet been published in a new installer. Do not assume a downloaded build includes unreleased work.
 
-```text
-(demand_count / (demand_count + 20)) × (1 − max(0, nearest_cosine_similarity))
-```
+Next priorities include validating results on authorized real-world datasets, completing English localization, improving input provenance and visual analysis, and preparing signed installers and an independently operated web service. These are development priorities, not committed delivery dates.
 
-This score is a prioritization heuristic, not success probability. Review nearby
-posts to confirm that they actually answer the question. Empty demand returns an
-empty list with `missing_demand_data`. Missing corpus is rejected. No 3D coordinates
-are fabricated. Payloads are bounded: 2,000 corpus rows, 1,536 dimensions, 200 queries;
-CFI allows at most 7,200 slices. Validation failures return HTTP 422.
+## For developers
 
-## Migration from the initial demo
+For source setup and local development, see [Development](docs/DEVELOPMENT.md). Architecture, providers, packaging, and hosting details are documented separately:
 
-- Canonical Python package changed from `algo-core` to `algo_core` to fix imports.
-- `/trend/forecast` now requires a JSON observation series; use `/trend/simulate`
-  for the previous scenario-only behavior.
-- `/whitespaces/discover` now requires real supplied inputs; it no longer invents
-  competitor vectors or audience demand.
-- `predicted_completion_rate` is `null`; grades describe pacing only. Hook is a
-  separate `stage` field. `critical_drop_points` stays empty; use `review_points`.
-  Unvalidated sawtooth targets were removed.
-- No cross-origin browser access is enabled by default; add explicit allowed
-  frontend origins when a frontend exists. API currently has no authentication
-  or collection pipeline and should be run locally.
+- [Desktop architecture and build notes](docs/DESKTOP_APP.md)
+- [Video analysis pipeline](docs/VIDEO_PIPELINE.md)
+- [Provider integration](docs/CODEX_LOCAL_WORKFLOW.md)
+- [Web deployment considerations](docs/WEB_HOSTING.md)
+- [Release process](docs/RELEASING.md)
 
-The original planning documents describe aspirations, not implemented guarantees.
-See [initial review](docs/research/ALGORITHM_FEASIBILITY_REVIEW_2026-10-31.md),
-[optimization notes](docs/research/OPTIMIZATION_2026-10-31.md), and
-[original source snapshot](docs/research/baseline_source_2026-10-31.tar.gz).
+Some technical documents remain in Vietnamese and may describe a particular development snapshot. The release notes and assets identify what is actually distributed.
 
-## Report pipeline (local, 2026-11-04)
+## License
 
-A durable local report pipeline is available at `POST /api/v1/reports/jobs`.
-It accepts supplied snapshots for channel, single-video, comparison and merge
-reports. Responses include job status, SSE and result URLs. Relative performance
-uses leave-one-out peer cohorts; missing evidence remains explicit. SQLite jobs
-survive restarts and expired leases can be recovered. This local adapter has no
-tenant authentication and must not be exposed publicly.
+Original CadenceLab source code is available under the [MIT License](LICENSE), copyright © 2026 builevi.
 
-See [backend progress and integration](docs/BACKEND_PROGRESS.md) and
-[synthetic request](docs/examples/channel-input.synthetic.json). Automatic social
-collection, semantic provider integration and production Celery/Postgres are
-still pending; the report does not invent these results.
-
-Backend integration update (2026-11-07): [API contracts, CSV import, structured semantic pipeline, jobs and provider verification](docs/BACKEND_INTEGRATION.md). GitHub Models did not return valid live inference JSON; quantitative reports remain functional.
-
-Local AI workflow is now available through the logged-in Codex app-server: [setup, provider routing and real smoke-test evidence](docs/CODEX_LOCAL_WORKFLOW.md). Semantic mode uses Codex local by default; statistics-only requests remain unchanged.
-
-Uploaded video analysis: [setup, supported files, methods and verified limits](docs/VIDEO_PIPELINE.md). The UI now accepts MP4/MOV/WebM files; spoken content uses local ASR and Codex. Visual semantics/OCR and automatic downloads from social links remain pending.
-
-Link submission and measured report timer: [source-bound jobs, real-result viewer and live collection limitations](docs/SOURCE_REPORTS_2026-11-08.md). Enter no longer substitutes the LumiDerm sample when a supplied link cannot be read.
-
-## Giấy phép
-
-Mã nguồn gốc của CadenceLab được phát hành theo [MIT License](LICENSE),
-Copyright (c) 2026 builevi. Có thể sử dụng thương mại, sửa đổi và phân phối
-với điều kiện giữ thông báo bản quyền và giấy phép.
-
-Các thư viện, model, font, runtime và binary bên thứ ba giữ giấy phép riêng;
-MIT của dự án không thay thế những điều khoản đó. Xem
-[thông tin thành phần Desktop](docs/DESKTOP_NOTICES.txt).
+Third-party libraries, models, fonts, runtimes, and binaries retain their own licenses. The project's MIT license does not replace those terms. See [Desktop third-party notices](docs/DESKTOP_NOTICES.txt).
